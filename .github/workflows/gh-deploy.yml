@@ -28,7 +28,18 @@ jobs:
           git pull
           mkdocs gh-deploy
 
-      - name: CNAME Creatin
+      - uses: actions/checkout@v2
+      - name: copy
+        env:
+          SRC: 'CNAME'
+          TARGET_BRANCH: 'gh-pages'
         run: |
-          touch CNAME
-          echo sandalenmetsokken.nl >> CNAME
+          files=$(find $SRC -type f) # get the file list
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git fetch                         # fetch branches
+          git checkout $TARGET_BRANCH       # checkout to your branch
+          git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
+          git add -A
+          git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
+          git push origin $TARGET_BRANCH # push to remote branch
