@@ -1,5 +1,6 @@
 :root > * {
   --md-primary-fg-color: #b696f5;
+  --md-default-fg-color: #fff;
   --md-primary-bg-color: #ffffff;
   --md-default-bg-color: #292a35;
 
@@ -15,4 +16,6 @@
   --md-code-hl-comment-color: #6272a4;
   --md-code-hl-generic-color: var(--md-default-fg-color--light);
   --md-code-hl-variable-color: #f8f8f2;
+
+  --md-accent-fg-color: #e5d7ff;
 }
