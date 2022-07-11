@@ -1,15 +1,20 @@
 ---
-author: "Chinou van Maris"
-created: "06/07/2022 20:53"
+author: 'Chinou van Maris'
+created: '06/07/2022 20:53'
 tags:
- - coding
- - python
- - cheatsheet
+  - coding
+  - python
+  - cheatsheet
 ---
+
 # Python Cheatsheet
-___
+
+---
+
 This is a comprehensive list of all the basics of Python. Inspired by [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)
+
 ## The Zen of Python
+
 Long time Pythoneer Tim Peters succinctly channels the BDFL's guiding principles for Python's design into 20 aphorisms, only 19 of which have been written down.
 
 ```python
@@ -37,16 +42,18 @@ Namespaces are one fucking great idea -- let's do more of those!
 ```
 
 ## Python Basics
-___
+
+---
+
 ### Math Operators
 
 | **Operators** | **Operation**     | **Example**     |
 | ------------- | ----------------- | --------------- |
-| **            | Exponent          | `2 ** 3 = 8`    |
+| \*\*          | Exponent          | `2 ** 3 = 8`    |
 | %             | Modulus/Remainder | `22 % 8 = 6`    |
 | //            | Integer division  | `22 // 8 = 2`   |
 | /             | Division          | `22 / 8 = 2.75` |
-| *             | Multiplication    | `3 * 3 = 9`     |
+| \*            | Multiplication    | `3 * 3 = 9`     |
 | -             | Subtraction       | `5 - 2 = 3`     |
 | +             | Addition          | `2 + 2 = 4`     |
 
@@ -61,12 +68,14 @@ ___
 ### Variables
 
 You can name a variable anything as long as it obeys the following rules:
+
 1. It can only be one word.
 2. It can use only letters, numbers, and the underscore `(_)` character.
 3. It can't begin with a number.
 4. Variable name starting with an underscore `(_)` are considered as "unuseful".
 
 **Example:**
+
 ```python
 >>> spam = "Hello"
 >>> spam
@@ -76,23 +85,26 @@ You can name a variable anything as long as it obeys the following rules:
 ```python
 >>> _spam = "Hello"
 ```
-*`_spam` should not be used again in the code.*
 
+_`_spam` should not be used again in the code._
 
 ### Comments
 
 Inline comment:
+
 ```python
 # This is a comment
 ```
 
 Multiline comment:
+
 ```python
-# This is a 
+# This is a
 # multiline comment
 ```
 
 Code with a comment:
+
 ```python
 a = 1 # initialization
 ```
@@ -109,7 +121,9 @@ def foo():
 ```
 
 ### The print() Function
+
 Example Code:
+
 ```python
 >>> print('What is your name?')   # ask for their name
 >>> myName = input()
@@ -120,7 +134,9 @@ It is good to meet you, Al
 ```
 
 ### The len() Function
+
 Evaluates to the integer value of the number of characters in a string:
+
 ```python
 >>> len('hello')
 5
@@ -135,7 +151,9 @@ Note: test of emptiness of strings, lists, dictionary, etc, should **not** use l
 ```
 
 ### The str(), int() and float() Functions
+
 Integer to String or Float:
+
 ```python
 >>> str(29)
 '29'
@@ -152,6 +170,7 @@ I am 29 years old.
 ```
 
 Float to Integer:
+
 ```python
 >>> int(7.7)
 7
@@ -161,11 +180,13 @@ Float to Integer:
 >>> int(7.7) + 1
 8
 ```
-___
+
+---
 
 ## Flow Control
 
 ### Comparison Operators
+
 | **Operator** | **Meaning**              |
 | ------------ | ------------------------ |
 | ==           | Equal to                 |
@@ -178,6 +199,7 @@ ___
 These operators evaluate to True or False depending on the values you give them.
 
 Examples:
+
 ```python
 >>> 42 == 42
 True
@@ -214,9 +236,11 @@ False
 ```
 
 ### Boolean evaluation
-Never use == or != operator to evaluate boolean operation. Use the *is* or *is not* operators, or use implicit boolean evaluation.
+
+Never use == or != operator to evaluate boolean operation. Use the _is_ or _is not_ operators, or use implicit boolean evaluation.
 
 NO (even if they are valid Python):
+
 ```python
 >>> True == True
 True
@@ -228,6 +252,7 @@ True
 ```
 
 YES (even if they are valid Python):
+
 ```python
 >>> True is True
 True
@@ -261,6 +286,7 @@ And these as well:
 ```
 
 ### Boolean Operators
+
 There are three Boolean operators: and, or, and not.
 
 The _and_ Operator’s _Truth_ Table:
@@ -279,14 +305,14 @@ The _or_ Operator’s _Truth_ Table:
 | `True or True`   | `True`           |
 | `True or False`  | `True`           |
 | `False or True`  | `True`           |
-| `False or False` | `False`                 |
+| `False or False` | `False`          |
 
 The _not_ Operator’s _Truth_ Table:
 
 | **Expression** | **Evaluates to** |
 | -------------- | ---------------- |
 | `not True`     | `False`          |
-| `not False`    | `True`                 |
+| `not False`    | `True`           |
 
 ### Mixing Boolean and Comparison Operators
 
@@ -361,6 +387,7 @@ while spam < 5:
 ```
 
 ### break Statements
+
 If the execution reaches a break statement, it immediately exits the while loop’s clause:
 
 ```python
@@ -373,6 +400,7 @@ print('Thank you!')
 ```
 
 ### continue Statements
+
 When the program execution reaches a continue statement, the program execution immediately jumps back to the start of the loop.
 
 ```python
@@ -428,6 +456,7 @@ You can even use a negative number for the step argument to make the for loop co
 ```
 
 ### For else statement
+
 This allows to specify a statement to execute in case of the full loop has been executed. Only useful when a `break` condition can occur in the loop:
 
 ```python
@@ -466,7 +495,8 @@ while True:
         sys.exit()
     print('You typed {}.'.format(response))
 ```
-___
+
+---
 
 ## Functions
 
@@ -483,8 +513,9 @@ Hello Bob
 ### Return Values and return Statements
 
 When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:
--   The return keyword.
--   The value or expression that the function should return.
+
+- The return keyword.
+- The value or expression that the function should return.
 
 ```python
 import random
@@ -546,12 +577,14 @@ cats,dogs,mice
 ```
 
 ### Local and Global Scope
--   Code in the global scope cannot use any local variables.
--   However, a local scope can access global variables. 
--   Code in a function’s local scope cannot use variables in any other local scope.  
--   You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
+
+- Code in the global scope cannot use any local variables.
+- However, a local scope can access global variables.
+- Code in a function’s local scope cannot use variables in any other local scope.
+- You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
 
 ### The global Statement
+
 If you need to modify a global variable from within a function, use the global statement:
 
 ```python
@@ -566,11 +599,13 @@ spam
 ```
 
 There are four rules to tell whether a variable is in a local scope or global scope:
+
 1.  If a variable is being used in the global scope (that is, outside of all functions), then it is always a global variable.
-2.  If there is a global statement for that variable in a function, it is a global variable. 
+2.  If there is a global statement for that variable in a function, it is a global variable.
 3.  Otherwise, if the variable is used in an assignment statement in the function, it is a local variable.
 4.  But if the variable is not used in an assignment statement, it is a global variable.
-___
+
+---
 
 ## Exception Handling
 
@@ -595,6 +630,7 @@ None
 ```
 
 ### Final code in exception handling
+
 Code inside the `finally` section is always executed, no matter if an exception has been raised or not, and even if an exception is not caught.
 
 ```python
@@ -619,7 +655,8 @@ None
 -- division finished --
 42.0
 ```
-___
+
+---
 
 ## Lists
 
@@ -820,6 +857,7 @@ True
 ```
 
 ### The Multiple Assignment Trick
+
 The multiple assignment trick is a shortcut that lets you assign multiple variables with the values in a list in one line of code. So instead of doing this:
 
 ```python
@@ -862,9 +900,10 @@ The multiple assignment trick can also be used to swap the values in two variabl
 | `spam -= 1`  | `spam = spam - 1` |
 | `spam *= 1`  | `spam = spam * 1` |
 | `spam /= 1`  | `spam = spam / 1` |
-| `spam %= 1`  | `spam = spam % 1`                  |
+| `spam %= 1`  | `spam = spam % 1` |
 
 Examples:
+
 ```python
 >>> spam = 'Hello'
 >>> spam += ' world!'
@@ -1000,28 +1039,31 @@ The main way that tuples are different from lists is that tuples, like strings, 
 >>> list('hello')
 ['h', 'e', 'l', 'l', 'o']
 ```
-___
+
+---
 
 ## Dictionaries and Structuring Data
 
 From the Python 3 [documentation](https://docs.python.org/3/tutorial/datastructures.html)
 
-```ad-info
-Another useful data type built into Python is the _dictionary_ (see [Mapping Types — dict](https://docs.python.org/3/library/stdtypes.html#typesmapping)). Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by _keys_, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified in place using index assignments, slice assignments, or methods like `append()` and `extend()`.
+!!! info "About dictionaries"
 
-It is best to think of a dictionary as a set of _key: value_ pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: `{}`. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.
+    Another useful data type built into Python is the _dictionary_ (see [Mapping Types — dict](https://docs.python.org/3/library/stdtypes.html#typesmapping)). Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by _keys_, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified in place using index assignments, slice assignments, or methods like `append()` and `extend()`.
 
-The main operations on a dictionary are storing a value with some key and extracting the value given the key. It is also possible to delete a key:value pair with `del`. If you store using a key that is already in use, the old value associated with that key is forgotten. It is an error to extract a value using a non-existent key.
+    It is best to think of a dictionary as a set of _key: value_ pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: `{}`. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.
 
-Performing `list(d)` on a dictionary returns a list of all the keys used in the dictionary, in insertion order (if you want it sorted, just use `sorted(d)` instead). To check whether a single key is in the dictionary, use the [`in`](https://docs.python.org/3/reference/expressions.html#in) keyword.
-```
+    The main operations on a dictionary are storing a value with some key and extracting the value given the key. It is also possible to delete a key:value pair with `del`. If you store using a key that is already in use, the old value associated with that key is forgotten. It is an error to extract a value using a non-existent key.
+
+    Performing `list(d)` on a dictionary returns a list of all the keys used in the dictionary, in insertion order (if you want it sorted, just use `sorted(d)` instead). To check whether a single key is in the dictionary, use the [`in`](https://docs.python.org/3/reference/expressions.html#in) keyword.
 
 **Example Dictionary:**
+
 ```python
 myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
 ```
 
 ### The keys(), values(), and items() Methods
+
 values():
 
 ```python
@@ -1089,6 +1131,7 @@ True
 ```
 
 ### The get() Method
+
 Get has two parameters: key and default value if the key did not exist
 
 ```python
@@ -1104,6 +1147,7 @@ Get has two parameters: key and default value if the key did not exist
 ```
 
 ### The setdefault() Method
+
 Let's consider this code:
 
 ```python
@@ -1190,16 +1234,19 @@ Using `setdefault` we could write the same code more succinctly:
 >>> z
 {'c': 4, 'a': 1, 'b': 3}
 ```
-___
+
+---
 
 ## Sets
 
 From the Python 3 [documentation](https://docs.python.org/3/tutorial/datastructures.html)
 
-```ad-info
-A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
-```
+!!! info "About Sets"
+
+     A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
+
 ### Initializing a set
+
 There are two ways to create sets: using curly braces `{}` and the built-in function `set()`
 
 ```python
@@ -1216,6 +1263,7 @@ When creating an empty set, be sure to not use the curly braces `{}` or you will
 ```
 
 ### Sets: unordered collections of unique elements
+
 A set automatically remove all the duplicate values.
 
 ```python
@@ -1236,6 +1284,7 @@ TypeError: 'set' object does not support indexing
 ```
 
 ### Set add() and update()
+
 Using the `add()` method we can add a single element to the set.
 
 ```python
@@ -1255,6 +1304,7 @@ And with `update()`, multiple ones .
 ```
 
 ### Set remove() and discard()
+
 Both methods will remove an element from the set, but `remove()` will raise a `key error` if the value doesn't exist.
 
 ```python
@@ -1280,6 +1330,7 @@ KeyError: 3
 ```
 
 ### Set union()
+
 `union()` or `|` will create a new set that contains all the elements from the sets provided.
 
 ```python
@@ -1290,6 +1341,7 @@ KeyError: 3
 ```
 
 ### Set intersection
+
 `intersection` or `&` will return a set containing only the elements that are common to all of them.
 
 ```python
@@ -1301,6 +1353,7 @@ KeyError: 3
 ```
 
 ### Set difference
+
 `difference` or `-` will return only the elements that are unique to the first set (invoked set).
 
 ```python
@@ -1313,6 +1366,7 @@ KeyError: 3
 ```
 
 ### Set symetric_difference
+
 `symetric_difference` or `^` will return all the elements that are not common between them.
 
 ```python
@@ -1321,7 +1375,8 @@ KeyError: 3
 >>> s1.symmetric_difference(s2)  # or 's1 ^ s2'
 {1, 4}
 ```
-___
+
+---
 
 ## itertools Module
 
@@ -1329,13 +1384,14 @@ The _itertools_ module is a collection of tools intended to be fast and use memo
 
 From the official [Python 3.x documentation](https://docs.python.org/3/library/itertools.html):
 
-```ad-info
-The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
-```
-The _itertools_ module comes in the standard library and must be imported.
-The [operator](https://docs.python.org/3/library/operator.html) module will also be used. This module is not necessary when using itertools, but needed for some of the examples below.
+!!! info "About itertools"
+
+    The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
+
+The _itertools_ module comes in the standard library and must be imported. The [operator](https://docs.python.org/3/library/operator.html) module will also be used. This module is not necessary when using itertools, but needed for some of the examples below.
 
 ### accumulate()
+
 Makes an iterator that returns the results of a function.
 
 ```python
@@ -1398,6 +1454,7 @@ If no function is designated the items will be summed:
 ```
 
 ### combinations()
+
 Takes an iterable and a integer. This will create all the unique combination that have r members.
 
 ```python
@@ -1417,6 +1474,7 @@ Example:
 ```
 
 ### combinations_with_replacement()
+
 Just like combinations(), but allows individual elements to be repeated more than once.
 
 ```python
@@ -1439,6 +1497,7 @@ Example:
 ```
 
 ### count()
+
 Makes an iterator that returns evenly spaced values starting with number start.
 
 ```python
@@ -1460,6 +1519,7 @@ Example:
 ```
 
 ### cycle()
+
 This function cycles through an iterator endlessly.
 
 ```python
@@ -1485,6 +1545,7 @@ orange
 When reached the end of the iterable it start over again from the beginning.
 
 ### chain()
+
 Take a series of iterables and return them as one long iterable.
 
 ```python
@@ -1511,6 +1572,7 @@ pentagon
 ```
 
 ### compress()
+
 Filters one iterable with another.
 
 ```python
@@ -1530,6 +1592,7 @@ square
 ```
 
 ### dropwhile()
+
 Make an iterator that drops elements from the iterable as long as the predicate is true; afterwards, returns every element.
 
 ```python
@@ -1553,6 +1616,7 @@ Example:
 ```
 
 ### filterfalse()
+
 Makes an iterator that filters elements from iterable returning only those for which the predicate is False.
 
 ```python
@@ -1575,6 +1639,7 @@ Example:
 ```
 
 ### groupby()
+
 Simply put, this function groups things together.
 
 ```python
@@ -1617,6 +1682,7 @@ decepticon
 ```
 
 ### islice()
+
 This function is very much like slices. This allows you to cut out a piece of an iterable.
 
 ```python
@@ -1656,6 +1722,7 @@ Example:
 ```
 
 ### product()
+
 Creates the cartesian products from a series of iterables.
 
 ```python
@@ -1676,6 +1743,7 @@ Creates the cartesian products from a series of iterables.
 ```
 
 ### repeat()
+
 This function will repeat an object over and over again. Unless, there is a times argument.
 
 ```python
@@ -1693,6 +1761,7 @@ spam
 ```
 
 ### starmap()
+
 Makes an iterator that computes the function using arguments obtained from the iterable.
 
 ```python
@@ -1712,6 +1781,7 @@ Example:
 ```
 
 ### takewhile()
+
 The opposite of dropwhile(). Makes an iterator and returns elements from the iterable as long as the predicate is true.
 
 ```python
@@ -1732,6 +1802,7 @@ Example:
 ```
 
 ### tee()
+
 Return n independent iterators from a single iterable.
 
 ```python
@@ -1765,6 +1836,7 @@ blue
 ```
 
 ### zip_longest()
+
 Makes an iterator that aggregates elements from each of the iterables. If the iterables are of uneven length, missing values are filled-in with fillvalue. Iteration continues until the longest iterable is exhausted.
 
 ```python
@@ -1789,7 +1861,8 @@ Example:
 (None, 9)
 (None, 10)
 ```
-___
+
+---
 
 ## Comprehensions
 
@@ -1825,7 +1898,8 @@ A List comprehension can be generated from a dictionary:
 >>> ["{}:{}".format(k.upper(), v.upper()) for k, v in c.items()]
 ['NAME:POOKA', 'FIRST_NAME:OOOKA']
 ```
-___
+
+---
 
 ## Manipulating Strings
 
@@ -1837,7 +1911,7 @@ ___
 | `\"`                 | Double quote        |
 | `\t`                 | Tab                 |
 | `\n`                 | Newline (linebreak) |
-| `\\`                 | Backslash                    |
+| `\\`                 | Backslash           |
 
 Example:
 
@@ -1849,6 +1923,7 @@ I'm doing fine.
 ```
 
 ### Raw Strings
+
 A raw string completely ignores all escape characters and prints any backslash that appears in the string.
 
 ```python
@@ -1998,6 +2073,7 @@ True
 ```
 
 ### The upper(), lower(), isupper(), and islower() String Methods
+
 `upper()` and `lower()`:
 
 ```python
@@ -2047,11 +2123,12 @@ False
 ```
 
 ### The isX String Methods
--   **isalpha()** returns True if the string consists only of letters and is not blank.
--   **isalnum()** returns True if the string consists only of letters and numbers and is not blank.
--   **isdecimal()** returns True if the string consists only of numeric characters and is not blank.
--   **isspace()** returns True if the string consists only of spaces, tabs, and new-lines and is not blank.
--   **istitle()** returns True if the string consists only of words that begin with an uppercase letter followed by only lowercase letters.
+
+- **isalpha()** returns True if the string consists only of letters and is not blank.
+- **isalnum()** returns True if the string consists only of letters and numbers and is not blank.
+- **isdecimal()** returns True if the string consists only of numeric characters and is not blank.
+- **isspace()** returns True if the string consists only of spaces, tabs, and new-lines and is not blank.
+- **istitle()** returns True if the string consists only of words that begin with an uppercase letter followed by only lowercase letters.
 
 ### The startswith() and endswith() String Methods
 
@@ -2086,6 +2163,7 @@ True
 ```
 
 ### The join() and split() String Methods
+
 join():
 
 ```python
@@ -2121,6 +2199,7 @@ split():
 ```
 
 ### Justifying Text with rjust(), ljust(), and center()
+
 rjust() and ljust():
 
 ```python
@@ -2201,7 +2280,8 @@ center():
 >>> pyperclip.paste()
 'Hello world!'
 ```
-___
+
+---
 
 ## String Formatting
 
@@ -2224,6 +2304,7 @@ We can use the `%x` format specifier to convert an int value to a string:
 **Note**: For new code, using [[#String Formatting str format|str-format]] or [[#Formatted String Literals or f-strings Python 3 6|f-strings]] (Python 3.6+) is strongly recommended over the `%` operator.
 
 ## String Formatting (str.format)
+
 Python 3 introduced a new way to do string formatting that was later back-ported to Python 2.7. This makes the syntax for string formatting more regular.
 
 ```python
@@ -2246,6 +2327,7 @@ The formatting operations described here exhibit a variety of quirks that lead t
 ```
 
 ### Lazy string formatting
+
 You would only use `%s` string formatting on functions that can do lazy parameters evaluation, the most common being logging:
 
 Prefer:
@@ -2285,6 +2367,7 @@ It is even possible to do inline arithmetic with it:
 ```
 
 ### Template Strings
+
 A simpler and less powerful mechanism, but it is recommended when handling format strings generated by users. Due to their reduced complexity template strings are a safer choice.
 
 ```python
@@ -2294,7 +2377,8 @@ A simpler and less powerful mechanism, but it is recommended when handling forma
 >>> t.substitute(name=name)
 'Hey Elizabeth!'
 ```
-___
+
+---
 
 ## Regular Expressions
 
@@ -2304,6 +2388,7 @@ ___
 4.  Call the Match object’s `group()` method to return a string of the actual matched text.
 
 All the regex functions in Python are in the re module:
+
 ```python
 >>> import re
 ```
@@ -2355,6 +2440,7 @@ To retrieve all the groups at once: use the groups() method—note the plural fo
 ```
 
 ### Matching Multiple Groups with the Pipe
+
 The | character is called a pipe. You can use it anywhere you want to match one of many expressions. For example, the regular expression r'Batman|Tina Fey' will match either 'Batman' or 'Tina Fey'.
 
 ```python
@@ -2386,6 +2472,7 @@ You can also use the pipe to match one of several patterns as part of your regex
 ```
 
 ### Optional Matching with the Question Mark
+
 The ? character flags the group that precedes it as an optional part of the pattern.
 
 ```python
@@ -2400,7 +2487,8 @@ The ? character flags the group that precedes it as an optional part of the patt
 ```
 
 ### Matching Zero or More with the Star
-The * (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
+
+The \* (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
 
 ```python
 >>> bat_regex = re.compile(r'Bat(wo)*man')
@@ -2418,7 +2506,8 @@ The * (called the star or asterisk) means “match zero or more”—the group t
 ```
 
 ### Matching One or More with the Plus
-While * means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
+
+While \* means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
 
 ```python
 >>> bat_regex = re.compile(r'Bat(wo)+man')
@@ -2440,6 +2529,7 @@ True
 ```
 
 ### Matching Specific Repetitions with Curly Brackets
+
 If you have a group that you want to repeat a specific number of times, follow the group in your regex with a number in curly brackets. For example, the regex (Ha){3} will match the string 'HaHaHa', but it will not match 'HaHa', since the latter has only two repeats of the (Ha) group.
 
 Instead of one number, you can specify a range by writing a minimum, a comma, and a maximum in between the curly brackets. For example, the regex (Ha){3,5} will match 'HaHaHa', 'HaHaHaHa', and 'HaHaHaHaHa'.
@@ -2458,6 +2548,7 @@ True
 ```
 
 ### Greedy and Nongreedy Matching
+
 Python’s regular expressions are greedy by default, which means that in ambiguous situations they will match the longest string possible. The non-greedy version of the curly brackets, which matches the shortest string possible, has the closing curly bracket followed by a question mark.
 
 ```python
@@ -2475,6 +2566,7 @@ Python’s regular expressions are greedy by default, which means that in ambigu
 ```
 
 ### The findall() Method
+
 In addition to the search() method, Regex objects also have a findall() method. While search() will return a Match object of the first matched text in the searched string, the findall() method will return the strings of every match in the searched string.
 
 ```python
@@ -2485,10 +2577,12 @@ In addition to the search() method, Regex objects also have a findall() method. 
 ```
 
 To summarize what the findall() method returns, remember the following:
--   When called on a regex with no groups, such as `\d-\d\d\d-\d\d\d\d`, the method findall() returns a list of ng matches, such as ['415-555-9999', '212-555-0000'].
--   When called on a regex that has groups, such as (`\d\d\d)-(d\d)-(\d\d\d\d`), the method findall() returns a list of es of strings (one string for each group), such as [('415', '555', '9999'), ('212', '555', '0000')].
+
+- When called on a regex with no groups, such as `\d-\d\d\d-\d\d\d\d`, the method findall() returns a list of ng matches, such as ['415-555-9999', '212-555-0000'].
+- When called on a regex that has groups, such as (`\d\d\d)-(d\d)-(\d\d\d\d`), the method findall() returns a list of es of strings (one string for each group), such as [('415', '555', '9999'), ('212', '555', '0000')].
 
 ### Making Your Own Character Classes
+
 There are times when you want to match a set of characters but the shorthand character classes (`\d, \w, \s,` and so on) are too broad. You can define your own character class using square brackets. For example, the character class [aeiouAEIOU] will match any vowel, both lowercase and uppercase.
 
 ```python
@@ -2511,9 +2605,10 @@ By placing a caret character (^) just after the character class’s opening brac
 ```
 
 ### The Caret and Dollar Sign Characters
--   You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.  
--   Likewise, you can put a dollar sign (`\$`) at the end of the regex to indicate the string must end with this regex pattern.    
--   And you can use the ^ and `\$` together to indicate that the entire string must match the regex—that is, it’s not enough for a match to be made on some subset of the string.
+
+- You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
+- Likewise, you can put a dollar sign (`\$`) at the end of the regex to indicate the string must end with this regex pattern.
+- And you can use the ^ and `\$` together to indicate that the entire string must match the regex—that is, it’s not enough for a match to be made on some subset of the string.
 
 The r'^Hello' regular expression string matches strings that begin with 'Hello':
 
@@ -2543,6 +2638,7 @@ True
 ```
 
 ### The Wildcard Character
+
 The . (or dot) character in a regular expression is called a wildcard and will match any character except for a newline:
 
 ```python
@@ -2568,7 +2664,7 @@ The . (or dot) character in a regular expression is called a wildcard and will m
 'Sweigart'
 ```
 
-The dot-star uses greedy mode: It will always try to match as much text as possible. To match any and all text in a nongreedy fashion, use the dot, star, and question mark (.*?). The question mark tells Python to match in a nongreedy way:
+The dot-star uses greedy mode: It will always try to match as much text as possible. To match any and all text in a nongreedy fashion, use the dot, star, and question mark (.\*?). The question mark tells Python to match in a nongreedy way:
 
 ```python
 >>> nongreedy_regex = re.compile(r'<.*?>')
@@ -2585,6 +2681,7 @@ The dot-star uses greedy mode: It will always try to match as much text as possi
 ```
 
 ### Matching Newlines with the Dot Character
+
 The dot-star will match everything except a newline. By passing re.DOTALL as the second argument to re.compile(), you can make the dot character match all characters, including the newline character:
 
 ```python
@@ -2617,9 +2714,10 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 | `\d`, `\w`, and `\s`     | a digit, word or space character, respectively.       |
 | `\D`, `\W`, and `\S`     | anything except a digit, word or space, respectively. |
 | `[abc]`                  | any character between the brackets (such as a, b).    |
-| `[^abc]`                 | any character that isn't between the brackets.                                                      |
+| `[^abc]`                 | any character that isn't between the brackets.        |
 
 ### Case-Insensitive Matching
+
 To make your regex case-insensitive, you can pass re.IGNORECASE or re.I as a second argument to re.compile():
 
 ```python
@@ -2640,7 +2738,9 @@ To make your regex case-insensitive, you can pass re.IGNORECASE or re.I as a sec
 ```
 
 ### Substituting Strings with the sub() Method
+
 The sub() method for Regex objects is passed two arguments:
+
 1.  The first argument is a string to replace any matches.
 2.  The second is the string for the regular expression.
 
@@ -2663,6 +2763,7 @@ A**** told C**** that E**** knew B**** was a double agent.'
 ```
 
 ### Managing Complex Regexes
+
 To tell the re.compile() function to ignore whitespace and comments inside the regular expression string, “verbose mode” can be enabled by passing the variable re.VERBOSE as the second argument to re.compile().
 
 Now instead of a hard-to-read regular expression like this:
@@ -2683,13 +2784,15 @@ phone_regex = re.compile(r'''(
     (\s*(ext|x|ext.)\s*\d{2,5})?  # extension
     )''', re.VERBOSE)
 ```
-___
+
+---
 
 ## Handling File and Directory Paths
 
 There are two main modules in Python that deals with path manipulation. One is the `os.path` module and the other is the `pathlib` module. The `pathlib` module was added in Python 3.4, offering an object-oriented way to handle file system paths.
 
 ### Backslash on Windows and Forward Slash on OS X and Linux
+
 On Windows, paths are written using backslashes (`\`) as the separator between folder names. On Unix based operating system such as macOS, Linux, and BSDs, the forward slash (`/`) is used as the path separator. Joining paths can be a headache if your code needs to work on different platforms.
 
 Fortunately, Python provides easy ways to handle this. We will showcase how to deal with this with both `os.path.join` and `pathlib.Path.joinpath`
@@ -2703,7 +2806,7 @@ Using `os.path.join` on Windows:
 'usr\\bin\\spam'
 ```
 
-And using `pathlib` on *nix:
+And using `pathlib` on \*nix:
 
 ```python
 >>> from pathlib import Path
@@ -2737,7 +2840,7 @@ C:\Users\user\details.csv
 C:\Users\user\invite.docx
 ```
 
-Using `pathlib` on *nix:
+Using `pathlib` on \*nix:
 
 ```python
 >>> my_files = ['accounts.txt', 'details.csv', 'invite.docx']
@@ -2750,6 +2853,7 @@ Using `pathlib` on *nix:
 ```
 
 ### The Current Working Directory
+
 Using `os` on Windows:
 
 ```python
@@ -2763,7 +2867,7 @@ Using `os` on Windows:
 'C:\\Windows\\System32'
 ```
 
-Using `pathlib` on *nix:
+Using `pathlib` on \*nix:
 
 ```python
 >>> from pathlib import Path
@@ -2778,6 +2882,7 @@ Using `pathlib` on *nix:
 ```
 
 ### Creating New Folders
+
 Using `os` on Windows:
 
 ```python
@@ -2785,7 +2890,7 @@ Using `os` on Windows:
 >>> os.makedirs('C:\\delicious\\walnut\\waffles')
 ```
 
-Using `pathlib` on *nix:
+Using `pathlib` on \*nix:
 
 ```python
 >>> from pathlib import Path
@@ -2811,16 +2916,19 @@ Oh no, we got a nasty error! The reason is that the 'delicious' directory does n
 And all is good :)
 
 ### Absolute vs. Relative Paths
+
 There are two ways to specify a file path.
--   An absolute path, which always begins with the root folder
--   A relative path, which is relative to the program’s current working directory
+
+- An absolute path, which always begins with the root folder
+- A relative path, which is relative to the program’s current working directory
 
 There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”
 
 ### Handling Absolute and Relative Paths
+
 To see if a path is an absolute path:
 
-Using `os.path` on *nix:
+Using `os.path` on \*nix:
 
 ```python
 >>> import os
@@ -2830,7 +2938,7 @@ True
 False
 ```
 
-Using `pathlib` on *nix:
+Using `pathlib` on \*nix:
 
 ```python
 >>> from pathlib import Path
@@ -2842,7 +2950,7 @@ False
 
 You can extract an absolute path with both `os.path` and `pathlib`
 
-Using `os.path` on *nix:
+Using `os.path` on \*nix:
 
 ```python
 >>> import os
@@ -2852,7 +2960,7 @@ Using `os.path` on *nix:
 '/home'
 ```
 
-Using `pathlib` on *nix:
+Using `pathlib` on \*nix:
 
 ```python
 from pathlib import Path
@@ -2864,7 +2972,7 @@ print(Path('..').resolve())
 
 You can get a relative path from a starting path to another path.
 
-Using `os.path` on *nix:
+Using `os.path` on \*nix:
 
 ```python
 >>> import os
@@ -2872,7 +2980,7 @@ Using `os.path` on *nix:
 'etc/passwd'
 ```
 
-Using `pathlib` on *nix:
+Using `pathlib` on \*nix:
 
 ```python
 >>> from pathlib import Path
@@ -2881,9 +2989,10 @@ etc/passwd
 ```
 
 ### Checking Path Validity
+
 Checking if a file/directory exists:
 
-Using `os.path` on *nix:
+Using `os.path` on \*nix:
 
 ```python
 import os
@@ -2897,7 +3006,7 @@ True
 False
 ```
 
-Using `pathlib` on *nix:
+Using `pathlib` on \*nix:
 
 ```python
 from pathlib import Path
@@ -2913,7 +3022,7 @@ False
 
 Checking if a path is a file:
 
-Using `os.path` on *nix:
+Using `os.path` on \*nix:
 
 ```python
 >>> import os
@@ -2925,7 +3034,7 @@ False
 False
 ```
 
-Using `pathlib` on *nix:
+Using `pathlib` on \*nix:
 
 ```python
 >>> from pathlib import Path
@@ -2939,7 +3048,7 @@ False
 
 Checking if a path is a directory:
 
-Using `os.path` on *nix:
+Using `os.path` on \*nix:
 
 ```python
 >>> import os
@@ -2951,7 +3060,7 @@ False
 False
 ```
 
-Using `pathlib` on *nix:
+Using `pathlib` on \*nix:
 
 ```python
 >>> from pathlib import Path
@@ -2964,6 +3073,7 @@ False
 ```
 
 ### Finding File Sizes and Folder Contents
+
 Getting a file's size in bytes:
 
 Using `os.path` on Windows:
@@ -2974,7 +3084,7 @@ Using `os.path` on Windows:
 776192
 ```
 
-Using `pathlib` on *nix:
+Using `pathlib` on \*nix:
 
 ```python
 >>> from pathlib import Path
@@ -2997,7 +3107,7 @@ Listing directory contents using `os.listdir` on Windows:
 'xwtpdui.dll', 'xwtpw32.dll', 'zh-CN', 'zh-HK', 'zh-TW', 'zipfldr.dll']
 ```
 
-Listing directory contents using `pathlib` on *nix:
+Listing directory contents using `pathlib` on \*nix:
 
 ```python
 >>> from pathlib import Path
@@ -3033,7 +3143,7 @@ Using `os.path.getsize()` and `os.listdir()` together on Windows:
 1117846456
 ```
 
-Using `pathlib` on *nix:
+Using `pathlib` on \*nix:
 
 ```python
 >>> from pathlib import Path
@@ -3047,6 +3157,7 @@ Using `pathlib` on *nix:
 ```
 
 ### Copying Files and Folders
+
 The shutil module provides functions for copying files, as well as entire folders.
 
 ```python
@@ -3095,11 +3206,13 @@ If there is no eggs folder, then move() will rename bacon.txt to a file named eg
 ```
 
 ### Permanently Deleting Files and Folders
--   Calling os.unlink(path) or Path.unlink() will delete the file at path.
--   Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.  
--   Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
+
+- Calling os.unlink(path) or Path.unlink() will delete the file at path.
+- Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.
+- Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
 
 ### Safe Deletes with the send2trash Module
+
 You can install this module by running pip install send2trash from a Terminal window.
 
 ```python
@@ -3143,11 +3256,13 @@ FILE INSIDE C:\delicious\walnut\waffles: butter.txt
 ```
 
 `pathlib` provides a lot more functionality than the ones listed above, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. Check out the [official documentation](https://docs.python.org/3/library/pathlib.html) if you want to know more!
-___
+
+---
 
 ## Reading and Writing Files
 
 ### The File Reading/Writing Process
+
 To read/write to a file in Python, you will want to use the `with` statement, which will close the file for you after you are done.
 
 ### Opening and reading files with the open() function
@@ -3177,7 +3292,6 @@ And trouble deaf heaven with my bootless cries,
 And look upon myself and curse my fate,
 ```
 
-
 ### Writing to Files
 
 ```python
@@ -3198,6 +3312,7 @@ Bacon is not a vegetable.
 ```
 
 ### Saving Variables with the shelve Module
+
 To save variables:
 
 ```python
@@ -3263,6 +3378,7 @@ Just like dictionaries, shelf values have keys() and values() methods that will 
 ```
 
 ### Extracting from ZIP Files
+
 The extractall() method for ZipFile objects extracts all the files and folders from a ZIP file into the current working directory.
 
 ```python
@@ -3294,11 +3410,13 @@ The extract() method for ZipFile objects will extract a single file from the ZIP
 ```
 
 This code will create a new ZIP file named new.zip that has the compressed contents of spam.txt.
-___
+
+---
 
 ## JSON, YAML and configuration files
 
 ### JSON
+
 Open a JSON file with:
 
 ```python
@@ -3318,12 +3436,13 @@ with open("filename.json", "w") as f:
 ```
 
 ### YAML
+
 Compared to JSON, YAML allows for much better human maintainability and gives you the option to add comments. It is a convenient choice for configuration files where humans will have to edit it.
 
 There are two main libraries allowing to access to YAML files:
--   [PyYaml](https://pypi.python.org/pypi/PyYAML)
--   [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
-Install them using `pip install` in your [[#Virtual Environment|virtual environment]]
+
+- [PyYaml](https://pypi.python.org/pypi/PyYAML)
+- [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml) Install them using `pip install` in your [[#Virtual Environment|virtual environment]]
 
 The first one it easier to use but the second one, Ruamel, implements much better the YAML specification, and allow for example to modify a YAML content without altering comments.
 
@@ -3338,6 +3457,7 @@ with open("filename.yaml") as f:
 ```
 
 ### Anyconfig
+
 [Anyconfig](https://pypi.python.org/pypi/anyconfig) is a very handy package allowing to abstract completely the underlying configuration file format. It allows to load a Python dictionary from JSON, YAML, TOML, and so on.
 
 Install it with:
@@ -3353,15 +3473,18 @@ import anyconfig
 
 conf1 = anyconfig.load("/path/to/foo/conf.d/a.yml")
 ```
-___
+
+---
 
 ## Debugging
 
 ### Raising Exceptions
+
 Exceptions are raised with a raise statement. In code, a raise statement consists of the following:
--   The raise keyword
--   A call to the Exception() function
--   A string with a helpful error message passed to the Exception() function
+
+- The raise keyword
+- A call to the Exception() function
+- A string with a helpful error message passed to the Exception() function
 
 ```python
 >>> raise Exception('This is the error message.')
@@ -3393,6 +3516,7 @@ for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
 ```
 
 ### Getting the Traceback as a String
+
 The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format_exc(). This function is useful if you want the information from an exception’s traceback but also want an except statement to gracefully handle the exception. You will need to import Python’s traceback module before calling this function.
 
 ```python
@@ -3417,11 +3541,13 @@ Exception: This is the error message.
 ```
 
 ### Assertions
+
 An assertion is a sanity check to make sure your code isn’t doing something obviously wrong. These sanity checks are performed by assert statements. If the sanity check fails, then an AssertionError exception is raised. In code, an assert statement consists of the following:
--   The assert keyword
--   A condition (that is, an expression that evaluates to True or False)
--   A comma
--   A string to display when the condition is False
+
+- The assert keyword
+- A condition (that is, an expression that evaluates to True or False)
+- A comma
+- A string to display when the condition is False
 
 ```python
 >>> pod_bay_door_status = 'open'
@@ -3445,6 +3571,7 @@ Disabling Assertions
 Assertions can be disabled by passing the -O option when running Python.
 
 ### Logging
+
 To enable the logging module to display log messages on your screen as your program runs, copy the following to the top of your program (but under the #! python shebang line):
 
 ```python
@@ -3491,17 +3618,19 @@ Say you wrote a function to calculate the factorial of a number. In mathematics,
 ```
 
 ### Logging Levels
+
 Logging levels provide a way to categorize your log messages by importance. There are five logging levels, described in Table 10-1 from least to most important. Messages can be logged at each level using a different logging function.
 
-| **Level**  | **Logging Function** | **Description**                                                                                                                |
-| ---------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `DEBUG`    | `logging.debug()`    | The lowest level. Used for small details. Usually you care about these messages only when diagnosing problems.                 |
-| `INFO`     | `logging.info()`     | Used to record information on general events in your program or confirm that things are working at their point in the program. |
-| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn't prevent the program from working but might do so in the future.              |
-| `ERROR`    | `logging.error()`    | Used to record an error that caused the program to fail to do something.                                                       |
-| `CRITICAL` | `logging.critical()` | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely.                                                                                                                               |
+| **Level** | **Logging Function** | **Description** |
+| --- | --- | --- |
+| `DEBUG` | `logging.debug()` | The lowest level. Used for small details. Usually you care about these messages only when diagnosing problems. |
+| `INFO` | `logging.info()` | Used to record information on general events in your program or confirm that things are working at their point in the program. |
+| `WARNING` | `logging.warning()` | Used to indicate a potential problem that doesn't prevent the program from working but might do so in the future. |
+| `ERROR` | `logging.error()` | Used to record an error that caused the program to fail to do something. |
+| `CRITICAL` | `logging.critical()` | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely. |
 
 ### Disabling Logging
+
 After you’ve debugged your program, you probably don’t want all these log messages cluttering the screen. The logging.disable() function disables these so that you don’t have to go into your program and remove all the logging calls by hand.
 
 ```python
@@ -3520,6 +3649,7 @@ After you’ve debugged your program, you probably don’t want all these log me
 ```
 
 ### Logging to a File
+
 Instead of displaying the log messages to the screen, you can write them to a text file. The logging.basicConfig() function takes a filename keyword argument, like so:
 
 ```python
@@ -3527,7 +3657,8 @@ import logging
 
 logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 ```
-___
+
+---
 
 ## Lambda Functions
 
@@ -3572,7 +3703,8 @@ Like regular nested functions, lambdas also work as lexical closures:
 ```
 
 **Note**: lambda can only evaluate an expression, like a single line of code.
-___
+
+---
 
 ## Ternary Conditional Operator
 
@@ -3611,7 +3743,8 @@ if age < 18:
 else:
     print('adult')
 ```
-___
+
+---
 
 ## args and kwargs
 
@@ -3696,23 +3829,27 @@ None
 ```
 
 ### Things to Remember(args)
+
 1.  Functions can accept a variable number of positional arguments by using `*args` in the def statement.
 2.  You can use the items from a sequence as the positional arguments for a function with the `*` operator.
 3.  Using the `*` operator with a generator may cause your program to run out of memory and crash.
 4.  Adding new positional parameters to functions that accept `*args` can introduce hard-to-find bugs.
 
 ### Things to Remember(kwargs)
+
 1.  Function arguments can be specified by position or by keyword.
 2.  Keywords make it clear what the purpose of each argument is when it would be confusing with only positional arguments.
 3.  Keyword arguments with default values make it easy to add new behaviors to a function, especially when the function has existing callers.
 4.  Optional keyword arguments should always be passed by keyword instead of by position.
-___
+
+---
 
 ## Context Manager
 
 While Python's context managers are widely used, few understand the purpose behind their use. These statements, commonly used with reading and writing files, assist the application in conserving system memory and improve resource management by ensuring specific resources are only in use for certain processes.
 
 ### with statement
+
 A context manager is an object that is notified when a context (a block of code) starts and ends. You commonly use one with the with statement. It takes care of the notifying.
 
 For example, file objects are context managers. When a context ends, the file object is closed automatically:
@@ -3727,6 +3864,7 @@ For example, file objects are context managers. When a context ends, the file ob
 Anything that ends execution of the block causes the context manager's exit method to be called. This includes exceptions, and can be useful when an error causes you to prematurely exit from an open file or connection. Exiting a script without properly closing files/connections is a bad idea, that may cause data loss or other problems. By using a context manager you can ensure that precautions are always taken to prevent damage or loss in this way.
 
 ### Writing your own contextmanager using generator syntax
+
 It is also possible to write a context manager using generator syntax thanks to the `contextlib.contextmanager` decorator:
 
 ```python
@@ -3747,7 +3885,8 @@ Exit
 
 >>>
 ```
-___
+
+---
 
 ## `__main__` Top-level script environment
 
@@ -3783,11 +3922,13 @@ For example we are developing script which is designed to be used as module, we 
 ```
 
 ### Advantages
+
 1.  Every Python module has it’s `__name__` defined and if this is `__main__`, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
 2.  If you import this script as a module in another script, the **name** is set to the name of the script/module.
 3.  Python files can act as either reusable modules, or as standalone programs.
 4.  if `__name__ == “main”:` is used to execute some code only if the file was run directly, and not imported.
-___
+
+---
 
 ## setup.py
 
@@ -3817,7 +3958,8 @@ Our initial setup.py will also include information about the license and will re
 ```
 
 Find more information visit [http://docs.python.org/install/index.html](http://docs.python.org/install/index.html).
-___
+
+---
 
 ## Dataclasses
 
@@ -3855,6 +3997,7 @@ with dataclass
 ```
 
 ### Default values
+
 It is easy to add default values to the fields of your data class.
 
 ```python
@@ -3874,6 +4017,7 @@ Python
 ```
 
 ### Type hints
+
 It is mandatory to define the data type in dataclass. However, If you don't want specify the datatype then, use `typing.Any`.
 
 ```python
@@ -3886,13 +4030,15 @@ It is mandatory to define the data type in dataclass. However, If you don't want
 ...    value: Any = 42
 ...
 ```
-___
+
+---
 
 ## Virtual Environment
 
 The use of a Virtual Environment is to test python code in encapsulated environments and to also avoid filling the base Python installation with libraries we might use for only one project.
 
 ### virtualenv
+
 1.  Install virtualenv
 
 ```shell
@@ -3905,7 +4051,6 @@ pip install virtualenv
 pip install virtualenvwrapper-win
 ```
 
-
 **Usage**:
 
 1.  Make a Virtual Environment
@@ -3913,27 +4058,24 @@ pip install virtualenvwrapper-win
 ```shell
 mkvirtualenv HelloWold
 ```
-  
+
 Anything we install now will be specific to this project. And available to the projects we connect to this environment.
-  
-2.  Set Project Directory
- To bind our virtualenv with our current working directory we simply enter:
+
+2.  Set Project Directory To bind our virtualenv with our current working directory we simply enter:
 
 ```shell
 setprojectdir .
 ```
 
-3.  Deactivate
- To move onto something else in the command line type ‘deactivate’ to deactivate your environment.
-  
+3.  Deactivate To move onto something else in the command line type ‘deactivate’ to deactivate your environment.
+
 ```
 deactivate
 ```
 
- Notice how the parenthesis disappear.
+Notice how the parenthesis disappear.
 
-4.  Workon
- Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder
+4.  Workon Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder
 
 ```
 workon HelloWold
@@ -3944,6 +4086,7 @@ workon HelloWold
 ```ad-info
 [Poetry](https://poetry.eustace.io/) is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
 ```
+
 1. Install Poetry
 
 ```
@@ -3985,8 +4128,8 @@ python = "*"
 pytest = "^3.4"
 ```
 
-3. Packages
-   To add dependencies to your project, you can specify them in the tool.poetry.dependencies section:
+3. Packages To add dependencies to your project, you can specify them in the tool.poetry.dependencies section:
+
 ```toml
 [tool.poetry.dependencies]
 pendulum = "^1.4"
@@ -4019,28 +4162,34 @@ For more information, check the [documentation](https://poetry.eustace.io/docs/)
 ```
 
 1. Install pipenv
+
 ```
 pip install pipenv
 ```
 
 2. Enter your Project directory and install the Packages for your project
+
 ```shell
 cd my_project
 pipenv install <package>
 ```
+
 Pipenv will install your package and create a Pipfile for you in your project’s directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
 
 3. Uninstall Packages
+
 ```
 pipenv uninstall <package>
 ```
 
 4. Activate the Virtual Environment associated with your Python project
+
 ```
 pipenv shell
 ```
 
 5. Exit the Virtual Environment
+
 ```
 exit
 ```
@@ -4048,14 +4197,17 @@ exit
 Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/).
 
 ### anaconda
+
 [Anaconda](https://anaconda.org/) is another popular tool to manage python packages.
 
 ```ad-info
 Where packages, notebooks, projects and environments are shared. Your place for free public conda package hosting.
 ```
+
 Usage:
 
 1.  Make a Virtual Environment
+
 ```
 conda create -n HelloWorld
 ```
@@ -4065,10 +4217,13 @@ conda create -n HelloWorld
 ```
 conda activate HelloWorld
 ```
+
 Anything installed now will be specific to the project HelloWorld
 
 3. Exit the Virtual Environment
+
 ```
 conda deactivate
 ```
-___
+
+---
