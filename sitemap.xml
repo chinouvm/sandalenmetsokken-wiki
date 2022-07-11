@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://sandalenmetsokken.nl/docs/</loc>
+         <loc>https://sandalenmetsokken.nl/</loc>
          <lastmod>2022-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sandalenmetsokken.nl/docs/Git/</loc>
+         <loc>https://sandalenmetsokken.nl/Git/</loc>
          <lastmod>2022-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sandalenmetsokken.nl/docs/Python/</loc>
+         <loc>https://sandalenmetsokken.nl/Python/</loc>
          <lastmod>2022-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
