@@ -1,0 +1,24 @@
+site_name: Sandalen met sokken!
+site_url: https://sandalenmetsokken.nl/docs
+theme:
+  name: material
+  homepage: https://sandalenmetsokken.nl/
+  features:
+    - navigation.top
+  palette:
+    scheme: slate
+    primary: blue
+nav:
+  - Home: index.md
+  - Cheatsheets:
+      - Python: Python.md
+      - GIT: Git.md
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
