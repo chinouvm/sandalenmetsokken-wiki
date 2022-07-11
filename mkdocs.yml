@@ -12,7 +12,7 @@ nav:
   - Home: index.md
   - Cheatsheets:
       - Python: Python.md
-      - GIT: Git.md
+      - Git: Git.md
 extra_css:
   - stylesheets/extra.css
 
