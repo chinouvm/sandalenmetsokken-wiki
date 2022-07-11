@@ -1,4 +1,4 @@
-# Welcome hallo
+# Welcome bij de Sandalen met Sokken Wiki
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
