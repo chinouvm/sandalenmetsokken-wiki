@@ -27,3 +27,8 @@ jobs:
         run: |
           git pull
           mkdocs gh-deploy
+
+      - name: CNAME Creatin
+        run: |
+          touch CNAME
+          echo sandalenmetsokken.nl >> CNAME
