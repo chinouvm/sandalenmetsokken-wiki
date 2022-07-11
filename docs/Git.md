@@ -1,16 +1,17 @@
 ---
-author: "Chinou van Maris"
-created: "06/07/2022 20:53"
+author: 'Chinou van Maris'
+created: '06/07/2022 20:53'
 tags:
- - coding
- - git
- - cheatsheet
+  - coding
+  - git
+  - cheatsheet
 ---
 
 # Git cheatsheet
+
 ---
-A collection of the most used git commands with descriptions on how to use them.
-Inspired by the [Atlassian](https://www.atlassian.com/nl) cheatsheet.
+
+A collection of the most used git commands with descriptions on how to use them. Inspired by the [Atlassian](https://www.atlassian.com/nl) cheatsheet.
 
 ### Git basics
 
@@ -95,10 +96,12 @@ git pull <remote>
 git push <remote> <branch>
 ```
 
-___
+---
 
-# Additional Options
-___
+## Additional Options
+
+---
+
 Extra git configurations options.
 
 ### Git config
@@ -136,7 +139,7 @@ git diff --cached
 # Reset staging area to match most recent commit, but leave the working directory unchanged
 git reset
 
-# Reset staging area and working directory to match most recent commit and !overwrites all changes! in the working directory 
+# Reset staging area and working directory to match most recent commit and !overwrites all changes! in the working directory
 git reset --hard
 
 # Move the current branch tip backward to <commit>, reset the staging area to match, but leave the working directory alone
@@ -203,4 +206,5 @@ git push <remote> -all
 # Tags aren’t automatically pushed when you push a branch or use the --all flag. The --tags flag sends all of your local tags to the remote repo.
 git push <remote> --tags
 ```
-___
+
+---
