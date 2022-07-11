@@ -1,0 +1,18 @@
+:root > * {
+  --md-primary-fg-color: #b696f5;
+  --md-primary-bg-color: #ffffff;
+  --md-default-bg-color: #292a35;
+
+  --md-code-hl-number-color: #bd93f9;
+  --md-code-hl-special-color: hsla(340, 83%, 47%, 1);
+  --md-code-hl-function-color: #50fa7b;
+  --md-code-hl-constant-color: #bd93f9;
+  --md-code-hl-keyword-color: #ff79c6;
+  --md-code-hl-string-color: #f1fa8c;
+  --md-code-hl-name-color: var(--md-code-fg-color);
+  --md-code-hl-operator-color: #bd93f9;
+  --md-code-hl-punctuation-color: #f8f8f2;
+  --md-code-hl-comment-color: #6272a4;
+  --md-code-hl-generic-color: var(--md-default-fg-color--light);
+  --md-code-hl-variable-color: #f8f8f2;
+}
