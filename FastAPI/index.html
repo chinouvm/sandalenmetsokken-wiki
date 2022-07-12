@@ -6,8 +6,6 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The documentation of a basic FastAPI">
-      
       
       
         <link rel="canonical" href="https://sandalenmetsokken.nl/FastAPI/">
@@ -492,17 +490,38 @@
 
   
 
+  <nav class="md-tags" >
+    
+      
+        <span class="md-tag">Coding</span>
+      
+    
+      
+        <span class="md-tag">Python</span>
+      
+    
+      
+        <span class="md-tag">API</span>
+      
+    
+      
+        <span class="md-tag">Cheatsheet</span>
+      
+    
+  </nav>
+
 
 
 <h1 id="fastapi">FastAPI</h1>
+<p><em><strong>Author:</strong> Teun Engels</em></p>
 <hr />
-<p>This is a comprehensive cheatsheet of all the basics of FastAPI. Made by <a href="https://github.com/engelsman16">Teun</a></p>
+<p>This is a comprehensive cheatsheet of all the basics of FastAPI</p>
 <h2 id="explanation">Explanation</h2>
 <p>The key features are:</p>
 <ul>
-<li><strong>Fast</strong>: Very high performance, on par with <strong>NodeJS</strong> and <strong>Go</strong> </li>
-<li><strong>Fast to code</strong>: Increase the speed to develop features by about 200% to 300%. </li>
-<li><strong>Fewer bugs</strong>: Reduce about 40% of human (developer) induced errors. </li>
+<li><strong>Fast</strong>: Very high performance, on par with <strong>NodeJS</strong> and <strong>Go</strong></li>
+<li><strong>Fast to code</strong>: Increase the speed to develop features by about 200% to 300%.</li>
+<li><strong>Fewer bugs</strong>: Reduce about 40% of human (developer) induced errors.</li>
 <li><strong>Intuitive</strong>: Great editor support. Completion everywhere. Less time debugging.</li>
 <li><strong>Easy</strong>: Designed to be easy to use and learn. Less time reading docs.</li>
 <li><strong>Short</strong>: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.</li>
@@ -515,7 +534,7 @@
 <p>First of all you will need fastapi.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip install fastapi
 </code></pre></div>
-<p>You will also need a live server FastAPI recommends uvicorn so we shall use that. </p>
+<p>You will also need a live server FastAPI recommends uvicorn so we shall use that.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip install &quot;uvicorn[standard]&quot;
 </code></pre></div>
 <h3 id="running-your-first-api">Running your first API</h3>
@@ -528,8 +547,7 @@
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">get_root</span><span class="p">():</span>
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;response&quot;</span> <span class="p">:</span> <span class="s2">&quot;Hello World!!!&quot;</span><span class="p">}</span>
 </code></pre></div>
-<p>You can now run the command <code>uvicorn main:app</code>.
-The command <code>uvicorn main:app</code> refers to:</p>
+<p>You can now run the command <code>uvicorn main:app</code>. The command <code>uvicorn main:app</code> refers to:</p>
 <ul>
 <li><code>main</code>: the file <code>main.py</code> (the Python "module").</li>
 <li><code>app</code>: the object created inside of <code>main.py</code> with the line <code>app = FastAPI()</code>.</li>

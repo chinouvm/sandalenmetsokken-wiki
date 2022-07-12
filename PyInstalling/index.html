@@ -6,8 +6,6 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="This document will cover the basics of installing things in python">
-      
       
       
         <link rel="canonical" href="https://sandalenmetsokken.nl/PyInstalling/">
@@ -17,7 +15,7 @@
     
     
       
-        <title>PyInstalling - Sandalen met sokken!</title>
+        <title>Python Installing - Sandalen met sokken!</title>
       
     
     
@@ -102,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PyInstalling
+              Python Installing
             
           </span>
         </div>
@@ -438,21 +436,42 @@
 
   
 
+  <nav class="md-tags" >
+    
+      
+        <span class="md-tag">Coding</span>
+      
+    
+      
+        <span class="md-tag">Python</span>
+      
+    
+      
+        <span class="md-tag">Setup</span>
+      
+    
+      
+        <span class="md-tag">Cheatsheet</span>
+      
+    
+  </nav>
+
 
 
 <h1 id="python-installing">Python Installing</h1>
+<p><em><strong>Author:</strong> Teun Engels</em></p>
 <hr />
 <p>This document will cover the basics of installing things in python (pip &amp; venv).</p>
 <h2 id="pip">pip</h2>
-<p>Pip is the Python package manager. It’s used to install and update packages. You'll need to make sure you have the latest version op pip installed. For this you can run:
+<p>Pip is the Python package manager. It’s used to install and update packages. You'll need to make sure you have the latest version op pip installed. For this you can run:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>py -m pip --version
-</code></pre></div></p>
+</code></pre></div>
 <p>If there is an update available you should run:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>py -m pip install --upgrade pip
 </code></pre></div>
 <h2 id="virtual-environments">Virtual Environments</h2>
 <p>Virtual Environments allows you to manage separate package installations for different projects. They essentially allow you to create a “virtual” isolated Python installation and install packages into that virtual installation.</p>
-<p>When you switch projects, you can simply create a new virtual environment and not have to worry about breaking the packages installed in the other environments. </p>
+<p>When you switch projects, you can simply create a new virtual environment and not have to worry about breaking the packages installed in the other environments.</p>
 <p>It is always recommended to use a virtual environment while developing Python applications.</p>
 <p>Run this command to create a new venv named <code>&lt;venv&gt;</code> .</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>py -m venv &lt;venv&gt;
