@@ -12,8 +12,14 @@ theme:
 nav:
   - Home: index.md
   - Cheatsheets:
-      - Python: Python.md
+      - Python:
+          - Python Programming: Python.md
+          - Python Installing: PyInstalling.md
+      - API:
+          - FastAPI: FastAPI.md
+
       - Git: Git.md
+
 extra_css:
   - stylesheets/extra.css
 
