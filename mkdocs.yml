@@ -16,12 +16,16 @@ nav:
           - Python Programming: Python.md
           - Python Installing: PyInstalling.md
       - API:
+          - API Basics: BasicsAPI.md
           - FastAPI: FastAPI.md
 
       - Git: Git.md
 
 extra_css:
   - stylesheets/extra.css
+
+plugins:
+  - tags
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -35,3 +39,4 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - meta

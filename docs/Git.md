@@ -1,6 +1,5 @@
 ---
 author: 'Chinou van Maris'
-created: '06/07/2022 20:53'
 tags:
   - coding
   - git
@@ -8,6 +7,8 @@ tags:
 ---
 
 # Git cheatsheet
+
+_**Author**: Chinou van Maris_
 
 ---
 
