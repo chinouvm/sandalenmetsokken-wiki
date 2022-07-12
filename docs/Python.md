@@ -1,6 +1,5 @@
 ---
 author: 'Chinou van Maris'
-created: '06/07/2022 20:53'
 tags:
   - coding
   - python
@@ -8,6 +7,8 @@ tags:
 ---
 
 # Python Cheatsheet
+
+_**Author**: Chinou van Maris_
 
 ---
 

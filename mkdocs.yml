@@ -23,6 +23,9 @@ nav:
 extra_css:
   - stylesheets/extra.css
 
+plugins:
+  - tags
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -35,3 +38,4 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - meta
