@@ -11,7 +11,7 @@ _**Author**: Chinou van Maris_
 
 ---
 
-A collection of the most used git commands with descriptions on how to use them. Inspired by the [Atlassian](https://www.atlassian.com/nl) cheatsheet.
+A collection of the most used :material-git: git commands with descriptions on how to use them. Inspired by the [Atlassian](https://www.atlassian.com/nl) cheatsheet.
 
 ### Git basics
 

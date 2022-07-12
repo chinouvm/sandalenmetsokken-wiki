@@ -14,6 +14,31 @@ _**Author:** Teun Engels_
 
 This document will cover the basics of installing things in python (pip & venv).
 
+???+ commands
+
+    List of all commands
+
+    ```
+    py -m pip --version
+    ```
+    ```
+    py -m pip install --upgrade pip
+    ```
+    ```
+    py -m venv <venv>
+    ```
+
+## **Python**
+
+To install :fontawesome-brands-python: python you just need to go [here](https://www.python.org/downloads/). 
+
+!!! warning
+
+    Make sure to **check** add Python x to include PATH
+
+    ![install](img/install.jpg)
+
+
 ## **pip**
 
 Pip is the Python package manager. It’s used to install and update packages. You'll need to make sure you have the latest version op pip installed. For this you can run:

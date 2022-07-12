@@ -45,7 +45,7 @@ The synchronous and asynchronous nature of an API is a function of the time fram
 
 In the case of asynchronous APIs, the availability of a resource, service or data store may not be immediate. These APIs may provide a callback to the requester when the requested resource is ready. Asynchronous requests are useful in maintaining functionality in an application rather than tie up application resources waiting on a request.
 
-**An API may be synchronous where data or service availability, resources and connectivity are high and low latency is a requirement. An API may be asynchronous where data or service availability and connectivity are low or oversaturated with demand.**
+An API may be synchronous where data or service availability, resources and connectivity are high and low latency is a requirement. An API may be asynchronous where data or service availability and connectivity are low or oversaturated with demand.
 
 ## **REST API**
 
