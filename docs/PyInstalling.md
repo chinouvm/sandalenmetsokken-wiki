@@ -14,7 +14,7 @@ _**Author:** Teun Engels_
 
 This document will cover the basics of installing things in python (pip & venv).
 
-## pip
+## **pip**
 
 Pip is the Python package manager. It’s used to install and update packages. You'll need to make sure you have the latest version op pip installed. For this you can run:
 
@@ -28,7 +28,7 @@ If there is an update available you should run:
 py -m pip install --upgrade pip
 ```
 
-## Virtual Environments
+## **Virtual Environments**
 
 Virtual Environments allows you to manage separate package installations for different projects. They essentially allow you to create a “virtual” isolated Python installation and install packages into that virtual installation.
 
