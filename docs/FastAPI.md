@@ -1,48 +1,50 @@
 ---
-title: FastAPI
-description: The documentation of a basic FastAPI
+tags:
+  - Coding
+  - Python
+  - API
+  - Cheatsheet
 ---
 
 # FastAPI
 
+_**Author:** Teun Engels_
+
 ---
 
-This is a comprehensive cheatsheet of all the basics of FastAPI. Made by [Teun](https://github.com/engelsman16)
-
-  
+This is a comprehensive cheatsheet of all the basics of FastAPI
 
 ## Explanation
 
 The key features are:
 
--   **Fast**: Very high performance, on par with **NodeJS** and **Go** 
--   **Fast to code**: Increase the speed to develop features by about 200% to 300%. 
--   **Fewer bugs**: Reduce about 40% of human (developer) induced errors. 
--   **Intuitive**: Great editor support. Completion everywhere. Less time debugging.
--   **Easy**: Designed to be easy to use and learn. Less time reading docs.
--   **Short**: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.
--   **Robust**: Get production-ready code. With automatic interactive documentation.
+- **Fast**: Very high performance, on par with **NodeJS** and **Go**
+- **Fast to code**: Increase the speed to develop features by about 200% to 300%.
+- **Fewer bugs**: Reduce about 40% of human (developer) induced errors.
+- **Intuitive**: Great editor support. Completion everywhere. Less time debugging.
+- **Easy**: Designed to be easy to use and learn. Less time reading docs.
+- **Short**: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.
+- **Robust**: Get production-ready code. With automatic interactive documentation.
 
 These key features are from [FastAPI](https://fastapi.tiangolo.com/).
 
-
 ## Installation
 
-### Basic installation 
+### Basic installation
 
 If you are new to installing things for python project click [here](PyInstalling.md).
 
 First of all you will need fastapi.
 
-````
+```
 pip install fastapi
-````
+```
 
-You will also need a live server FastAPI recommends uvicorn so we shall use that. 
+You will also need a live server FastAPI recommends uvicorn so we shall use that.
 
-````
+```
 pip install "uvicorn[standard]"
-````
+```
 
 ### Running your first API
 
@@ -58,12 +60,11 @@ async def get_root():
 	return {"response" : "Hello World!!!"}
 ```
 
-You can now run the command `uvicorn main:app`.
-The command `uvicorn main:app` refers to:
+You can now run the command `uvicorn main:app`. The command `uvicorn main:app` refers to:
 
--   `main`: the file `main.py` (the Python "module").
--   `app`: the object created inside of `main.py` with the line `app = FastAPI()`.
--   `--reload`: make the server restart after code changes. Only use for development.
+- `main`: the file `main.py` (the Python "module").
+- `app`: the object created inside of `main.py` with the line `app = FastAPI()`.
+- `--reload`: make the server restart after code changes. Only use for development.
 
 ## Implementation
 
@@ -71,16 +72,16 @@ When building APIs, you normally use these specific HTTP methods to perform a sp
 
 Normally you use:
 
--   **POST**: to create data.
--   **GET**: to read data.
--   **PUT**: to update data.
--   **DELETE** : to delete data.
+- **POST**: to create data.
+- **GET**: to read data.
+- **PUT**: to update data.
+- **DELETE** : to delete data.
 
 This is a **path operation function** example:
 
--   **path**: is `/`.
--   **operation**: is `get`.
--   **function**: [async](www.google.com) def get_root()
+- **path**: is `/`.
+- **operation**: is `get`.
+- **function**: [async](www.google.com) def get_root()
 
 ```py
 from fastapi import FastAPI

@@ -1,9 +1,8 @@
 ---
-author: 'Chinou van Maris'
 tags:
-  - coding
-  - git
-  - cheatsheet
+  - Coding
+  - Git
+  - Cheatsheet
 ---
 
 # Git cheatsheet

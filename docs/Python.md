@@ -1,9 +1,8 @@
 ---
-author: 'Chinou van Maris'
 tags:
-  - coding
-  - python
-  - cheatsheet
+  - Coding
+  - Python
+  - Cheatsheet
 ---
 
 # Python Cheatsheet
