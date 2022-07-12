@@ -16,6 +16,7 @@ nav:
           - Python Programming: Python.md
           - Python Installing: PyInstalling.md
       - API:
+          - API Basics: BasicsAPI.md
           - FastAPI: FastAPI.md
 
       - Git: Git.md

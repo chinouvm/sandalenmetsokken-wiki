@@ -66,3 +66,29 @@ The command `uvicorn main:app` refers to:
 -   `--reload`: make the server restart after code changes. Only use for development.
 
 ## Implementation
+
+When building APIs, you normally use these specific HTTP methods to perform a specific action.
+
+Normally you use:
+
+-   **POST**: to create data.
+-   **GET**: to read data.
+-   **PUT**: to update data.
+-   **DELETE** : to delete data.
+
+This is a **path operation function** example:
+
+-   **path**: is `/`.
+-   **operation**: is `get`.
+-   **function**: [async](www.google.com) def get_root()
+
+```py
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/")
+async def get_root():
+    return {"response" : "Hello World!!!"}
+```
