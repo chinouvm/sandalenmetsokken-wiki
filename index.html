@@ -6,16 +6,20 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Sandalen met Sokken (Sandals with Socks in English) provides guides and cheatsheets for all kind of IT related topics. We have guides for programming languages, DevOps, Cloud, and more.">
+      
+      
+        <meta name="author" content="Chinou van Maris, Teun Engels">
       
       
         <link rel="canonical" href="https://sandalenmetsokken.nl/">
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="img/logo.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
     
     
       
-        <title>Sandalen met sokken!</title>
+        <title>Sandalen met sokken</title>
       
     
     
@@ -67,11 +71,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#welcome-monkeys" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -82,9 +81,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Sandalen met sokken!" class="md-header__button md-logo" aria-label="Sandalen met sokken!" data-md-component="logo">
+    <a href="." title="Sandalen met sokken" class="md-header__button md-logo" aria-label="Sandalen met sokken" data-md-component="logo">
       
-  <img src="img/logo.png" alt="logo">
+<img class="headerlogo" src="img/logo.png" alt="logo" />
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -94,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Sandalen met sokken!
+            Sandalen met sokken
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -149,11 +148,548 @@
     
     <div class="md-container" data-md-component="container">
       
+       
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
       
         
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="." class="md-tabs__link md-tabs__link--active">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Python/" class="md-tabs__link">
+        Cheatsheets
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="BasicsAPI/" class="md-tabs__link">
+        Guides
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="Definitions/" class="md-tabs__link">
+      Definitions
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
           
         
       
+<!-- Additional styles for landing page -->
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #16171d;
+  }
+
+  .md-main {
+    flex-grow: 0;
+    background-color: #161623;
+  }
+
+  .md-main__inner {
+    display: flex;
+    height: 100%;
+  }
+
+  .tx-container {
+    padding-top: 0rem;
+    background: linear-gradient(
+      to bottom,
+      var(--md-primary-fg-color),
+      rgb(86, 93, 194) 99%,
+      #161623 99%
+    );
+  }
+
+  .tx-hero {
+    margin: 32px 2.8rem;
+    color: var(--md-primary-bg-color);
+    justify-content: center;
+  }
+
+  .cards {
+    background-color: white;
+  }
+
+  .tx-hero h1 {
+    margin-bottom: 1rem;
+    color: currentColor;
+    font-weight: 700;
+  }
+
+  .tx-hero__content {
+    padding-bottom: 1rem;
+    margin: 0 auto;
+  }
+
+  .tx-hero__image {
+    width: 17rem;
+    height: 17rem;
+    order: 1;
+    padding-right: 2.5rem;
+  }
+
+  .tx-hero .md-button {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    color: var(--md-primary-bg-color);
+  }
+
+  .tx-hero .md-button--primary {
+    background-color: var(--md-primary-bg-color);
+    color: hsla(280deg, 37%, 48%, 1);
+    border-color: var(--md-primary-bg-color);
+  }
+
+  .tx-hero .md-button:focus,
+  .tx-hero .md-button:hover {
+    background-color: var(--md-accent-fg-color);
+    color: var(--md-default-bg-color);
+    border-color: var(--md-accent-fg-color);
+  }
+
+  .feature-item h2 svg {
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+    transform: translateY(10%);
+  }
+
+  .top-hr {
+    margin-top: 42px;
+  }
+
+  .feature-item {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    padding: 0 15px;
+    word-break: break-word;
+  }
+
+  .feature-item h2 {
+    color: #333;
+    font-weight: 300;
+    font-size: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+  }
+
+  .feature-item p {
+    font-size: 16px;
+    line-height: 1.8em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #111;
+    margin: 0 0 10px;
+    display: block;
+  }
+
+  @media screen and (max-width: 30em) {
+    .tx-hero h1 {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+      display: none;
+    }
+
+    .tx-hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tx-hero__content {
+      max-width: 22rem;
+      margin-top: 3.5rem;
+      margin-bottom: 3.5rem;
+      margin-left: 1rem;
+      margin-right: 4rem;
+      align-items: center;
+    }
+  }
+
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: none;
+    }
+
+    .top-hr {
+      width: 100%;
+      display: flex;
+      max-width: 61rem;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0 0.2rem;
+    }
+
+    .bottom-hr {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      max-width: 61rem;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0 0.2rem;
+    }
+
+    .feature-item {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .feature-item:hover {
+      background-color: #526cfe47;
+      border-radius: 3px;
+    }
+  }
+
+  .hr {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .text-center {
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    padding-bottom: 10px;
+  }
+
+  .logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+  }
+
+  .logos img {
+    flex: 1 1 auto;
+    padding: 25px;
+    max-height: 130px;
+    vertical-align: middle;
+  }
+
+  .hr-logos {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .md-footer-meta__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  .md-footer-social {
+    padding-top: 20px;
+  }
+
+  .cards-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #161623;
+    min-height: 25vh;
+  }
+
+  .section {
+    position: relative;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+
+  .container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+
+  .container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+
+  .container .card:hover .content {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+
+  .container .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+  }
+
+  .container .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .container .card .content .contentBx h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+  }
+
+  .container .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+  }
+
+  .container .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+  }
+
+  .container .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+  }
+
+  .container .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .container .card .sci li a {
+    color: #fff;
+    font-size: 24px;
+    transition: 0.2s;
+  }
+
+  .container .card .sci li a:hover {
+    color: #b696f5;
+  }
+
+  .authors {
+    font-size: 40px;
+  }
+
+  .heading {
+    margin-top: 50px;
+  }
+</style>
+
+<!-- Main site Entry button descriptions -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+<section class="tx-container">
+  <div class="md-grid md-typeset">
+    <div class="tx-hero">
+      <div class="tx-hero__image">
+        <img src="assets/steps.svg" draggable="false" />
+      </div>
+      <div class="tx-hero__content">
+        <h1>Guides and Cheatsheets</h1>
+        <p>
+          Sandalen met Sokken <em>(Sandals with Socks in English)</em> provides guides and
+          cheatsheets for all kind of IT related topics. We have guides for programming languages,
+          DevOps, Cloud, and more.
+        </p>
+        <a
+          href="Python/"
+          title="Python Programming"
+          class="md-button md-button--primary"
+        >
+          Get started
+        </a>
+        <a
+          href="https://github.com/chinouvm/sandalenmetsokken-wiki"
+          title="https://github.com/chinouvm/sandalenmetsokken-wiki"
+          class="md-button"
+          target="_blank"
+        >
+          Go to GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cards-body">
+  <div class="heading">
+    <h1 class="authors">The Authors</h1>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <div class="imgBx">
+            <img src="https://avatars.githubusercontent.com/u/80408039?v=4.png" alt="" />
+          </div>
+          <div class="contentBx">
+            <h3>Chinou<br /><span>Student ICT & Infrastructure</span></h3>
+          </div>
+        </div>
+        <ul class="sci">
+          <li style="--i: 1">
+            <a href="https://github.com/chinouvm" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li style="--i: 2">
+            <a href="https://www.linkedin.com/in/chinouvanmaris/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="imgBx">
+            <img src="https://avatars.githubusercontent.com/u/80408060?v=4.png" alt="" />
+          </div>
+          <div class="contentBx">
+            <h3>Teun<br /><span>Student ICT & Technology</span></h3>
+          </div>
+        </div>
+        <ul class="sci">
+          <li style="--i: 1">
+            <a href="https://github.com/engelsman16" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li style="--i: 2">
+            <a href="https://linkedin.com/in/teunengels" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
@@ -164,15 +700,17 @@
                   <div class="md-sidebar__inner">
                     
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Sandalen met sokken!" class="md-nav__button md-logo" aria-label="Sandalen met sokken!" data-md-component="logo">
+    <a href="." title="Sandalen met sokken" class="md-nav__button md-logo" aria-label="Sandalen met sokken" data-md-component="logo">
       
-  <img src="img/logo.png" alt="logo">
+<img class="headerlogo" src="img/logo.png" alt="logo" />
 
     </a>
-    Sandalen met sokken!
+    Sandalen met sokken
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -190,8 +728,6 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
-      
-        
       
       
       <a href="." class="md-nav__link md-nav__link--active">
@@ -284,12 +820,60 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Git/" class="md-nav__link">
+        Git
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
   
 
             
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
               
@@ -300,18 +884,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_2_2">
+        <label class="md-nav__link" for="__nav_3_1">
           API
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="API" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_2">
+        <label class="md-nav__title" for="__nav_3_1">
           <span class="md-nav__icon md-icon"></span>
           API
         </label>
@@ -372,22 +956,8 @@
   
   
     <li class="md-nav__item">
-      <a href="Git/" class="md-nav__link">
-        Git
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Definitions/" class="md-nav__link">
-        Definitions
+      <a href="Docker/" class="md-nav__link">
+        Docker
       </a>
     </li>
   
@@ -396,6 +966,21 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Definitions/" class="md-nav__link">
+        Definitions
+      </a>
     </li>
   
 
@@ -417,8 +1002,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -428,33 +1011,6 @@
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
-              
-                
-
-  
-
-
-
-<h1 id="welcome-monkeys">Welcome Monkeys</h1>
-<p>This documentation website is meant to be a collection of different guides and cheatsheets for different programming languages and tools.</p>
-<p><img alt="Monke" src="https://static.wikia.nocookie.net/ae9342f2-d5ef-44d2-9bce-ea410407b4d7/scale-to-width/755" /></p>
-<p>Coming soon:</p>
-<ul>
-<li><strong>Docker</strong> </li>
-<li><strong><a href="CPP/">C++</a></strong></li>
-<li><strong>Update to <a href="Git/">GIT</a></strong></li>
-</ul>
-<div class="admonition donator">
-<p class="admonition-title">Donators</p>
-<ul>
-<li>Karo Azizi</li>
-</ul>
-</div>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-<script type='text/javascript'>kofiwidget2.init('Support us on Ko-fi', '#B696F5', 'S6S3DSLP3');kofiwidget2.draw();</script>
-
-<p>The website and guides are created by <a href="https://github.com/engelsman16">Teun Engels</a> and <a href="https://github.com/chinouvm">Chinou van Maris</a>.</p>
-
               
             </article>
             
@@ -468,41 +1024,58 @@
         
       </main>
       
-        <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-      
-        
-        <a href="Python/" class="md-footer__link md-footer__link--next" aria-label="Next: Python Programming" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Python Programming
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
-  
+        <!--
+  Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Footer -->
+<footer class="md-footer">
+  <!-- Further information -->
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022  |  Chinou & Teun
+    </div>
   
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
-      
+
+      <!-- Social links -->
+       <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/chinouvm/sandalenmetsokken-wiki" target="_blank" rel="noopener" title="The Github Repo of this Website" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://ko-fi.com/sandalenmetsokken" target="_blank" rel="noopener" title="Our ko-fi link for donations!" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M512 64c35.3 0 64 28.65 64 64v256c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64V128c0-35.35 28.65-64 64-64h448zM272 192c-8.8 0-16 7.2-16 16s7.2 16 16 16h224c8.8 0 16-7.2 16-16s-7.2-16-16-16H272zm0 128h224c8.8 0 16-7.2 16-16s-7.2-16-16-16H272c-8.8 0-16 7.2-16 16s7.2 16 16 16zM164.1 160c0-11.1-9-20.1-21-20.1-10.2 0-19.2 9-19.2 20.1v6c-5.6 1.2-11.8 2.9-15.9 5.1-14.94 6.8-27.93 19.4-31.09 37.7-1.77 10.2-.83 20.1 3.41 29 4.15 8.8 10.68 15 17.31 19.5 11.57 7.9 26.87 12.5 38.57 16l2.2.6c14 4.3 23.4 7.4 29.3 11.7 2.5 1.8 3.4 3.2 3.7 4.1.4.8 1 2.6.3 6.6-.6 3.5-2.5 6.5-8 8.8-6.1 2.6-16 3.9-28.8 1.9-6-1-16.7-4.6-26.2-7.8-2.2-.8-4.4-1.5-6.4-2.2-10.46-3.5-21.79 2.2-25.28 12.7-3.49 10.5 2.18 21.8 12.66 24.4 1.21 1.3 2.71 1.8 4.43 2.4 6.99 2.7 20.29 6.9 29.79 9.1v6.4c0 11.1 9 20.1 19.2 20.1 12 0 21-9 21-20.1v-5.5c5.3-1 10.5-3.4 15.3-4.6 15.8-6.7 28.4-19.7 31.7-38.7 1.8-10.4 1-20.4-3-29.5-3.9-9-10.2-15.6-16.9-20.4-12.1-8.9-28.3-13.7-40.4-17.4l-1.7-.2c-13.3-4.3-22.9-7.3-29-11.5-2.6-1.8-3.4-3-3.6-3.5-.2-.4-.8-1.6-.2-5 .4-2 1.9-5.3 8.2-8.1 5.6-2.9 16.4-4.5 28.6-3.5 4.4 1.6 17.9 4.2 21.8 5.2 10.6 2.9 21.6-3.5 24.4-14.2 2.9-10.6-3.5-21.6-14.2-24.4-4.4-1.2-14.4-3.2-21-4.4V160z"/></svg>
+    </a>
+  
+</div> 
     </div>
   </div>
 </footer>
@@ -511,7 +1084,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.top"], "search": "assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.top", "navigation.tabs"], "search": "assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.f758a944.min.js"></script>
