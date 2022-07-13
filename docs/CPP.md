@@ -62,10 +62,13 @@ For this we need to use the terminal `Press Ctrl + Alt + T`
 
 !!! commands
     
-    To installed g++ you need to run this command
+    To install g++ you need to run this command
 
     ```
+    sudo apt-get update
+    sudo apt-get install gcc
     sudo apt -get install g++
+    sudo apt-get install build-essential
     ```
 
     To check your g++ version you can run
@@ -77,6 +80,7 @@ For this we need to use the terminal `Press Ctrl + Alt + T`
     Later in this guide we will use a debugger [GDB]() but we can install it already
 
     ```
+    sudo apt-get update
     sudo apt-get install gdb
     ```
 
@@ -89,6 +93,8 @@ For this we need to use the terminal `Press Ctrl + Alt + T`
 
 
 ### File Types
+
+#### .cpp
 
 For C++ code we use a `.cpp` file so the [compiler]() knows we are using C++. 
 
@@ -106,25 +112,84 @@ int main()
 }
 
 ```
+
+#### .h & .hpp
+
 If you are at all familiar with C you probably know header files.
 
-C++ is an extend of C so C++ also uses header files. These can ether have a `.h` extention or `.hpp`. But its recommended to use `.hpp` for C++ just for clarity.
+C++ is an extend of C so C++ also uses header files. These can either have a `.h` extention or `.hpp`.
+
+A header file includes the following three things 
+
+- Function definitions
+- Data type definitions
+- Macros
+
+There are two types of header files
+
+- **Pre-existing** header files: Files which are already available.
+- **User-defined** header files: These files are defined by the user.
+
+???+ code "Code Example"
+
+    Here is an example of a basic header file implementation
+
+    `main.cpp`
+
+    ```cpp
+    #include "sum.h"
+
+    #include <iostream>
+    using namespace std;
+
+    int main()
+    {
+    SumOfTwo(3,4);
+    }
+
+    ```
+    `sum.cpp`
+
+    ```cpp
+    #include "sum.h"
+
+    int SumOfTwo(int a, int b)
+    {
+        return (a + b);
+    }
+
+    ```
+    `sum.h`
+
+    ```cpp
+    #ifndef SUM_H
+    #define SUM_H
+
+    int SumOfTwo(int a, int b);
+
+    #endif
+
+    ```
+
+
 
 ### C++ Project Structure
 
 Top-Level Directories:
 
-- build/ 
-- include/ 
-- src/ 
-- tests/ 
-- examples/ 
-- external/ 
-- data/ 
-- tools/ 
-- docs/ 
-- libs/ 
-- extras/ 
+```
+build/ 
+include/ 
+src/ 
+tests/ 
+examples/ 
+external/ 
+data/ 
+tools/ 
+docs/ 
+libs/ 
+extras/ 
+```
 
 A lot of these Top-Level directories are not needed at the start so we shall ignore them for the beginning. But a few are important so we will take a futher look into them.
 
@@ -157,6 +222,9 @@ A lot of these Top-Level directories are not needed at the start so we shall ign
             sorting.cpp
             sorting.hpp
     ```
+
+## Your first program
+
 
 
 
