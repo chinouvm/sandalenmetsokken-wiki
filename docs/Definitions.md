@@ -6,7 +6,7 @@ tags:
 
 # Definitions
 
-_**Author**: Teun Engels, Chinou van Maris_
+_**Authors**: Teun Engels, Chinou van Maris_
 
 ---
 

@@ -25,13 +25,15 @@ nav:
 
       - Definitions: Definitions.md
 
-      - Editors: Editors.md
-
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - scripts/donate.js
+
 plugins:
   - tags
+  - search
 
 markdown_extensions:
   - pymdownx.highlight:
