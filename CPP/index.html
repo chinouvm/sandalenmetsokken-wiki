@@ -842,7 +842,7 @@
 </li>
 </ul>
 <h4 id="linux">Linux</h4>
-<p>The second option is linux. </p>
+<p>The second option is linux.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>g++ is the name of the C++ compiler</p>
@@ -869,15 +869,15 @@
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>From this point on we will use Linux for the rest of this guide.</strong> </p>
+<p><strong>From this point on we will use Linux for the rest of this guide.</strong></p>
 </div>
 <h3 id="your-first-program">Your first program</h3>
-<p>We will now make your first C++ program. </p>
+<p>We will now make your first C++ program.</p>
 <p>First we need to create a file called <a href="#file-types"><code>main.cpp</code></a> and we will put our code in there.</p>
 <p>We shall ignore the code for now.</p>
 <p>This is purely for showing you how to compile a file to an executable with <a href="#linux">g++</a>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w">    </span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"></span>
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">{</span><span class="w"></span>
@@ -886,9 +886,9 @@
 <a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>Now we have a file called <code>main.cpp</code> and we can compile it with <code>g++ main.cpp</code>.</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>g++ main.cpp
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>g++ main.cpp
 </code></pre></div>
-This will create a file named <code>a.out</code> (the executable's default file name). To run the program we can use <code>./a.out</code>.</p>
+<p>This will create a file named <code>a.out</code> (the executable's default file name). To run the program we can use <code>./a.out</code>.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p><strong>Note:</strong> You can also use <code>g++ main.cpp -o &lt;target_name&gt;</code> to compile the program to a filed named target_name.</p>
@@ -898,7 +898,7 @@ This will create a file named <code>a.out</code> (the executable's default file 
 </div>
 <h3 id="file-types">File Types</h3>
 <h4 id="cpp">.cpp</h4>
-<p>For C++ code we use a <code>.cpp</code> file so the <a href="">compiler</a> knows we are using C++. </p>
+<p>For C++ code we use a <code>.cpp</code> file so the <a href="">compiler</a> knows we are using C++.</p>
 <p><code>main.cpp</code> is the source code filename typically used for the main() function of a C++ program, where the program begins execution.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
@@ -912,7 +912,7 @@ This will create a file named <code>a.out</code> (the executable's default file 
 <h4 id="h-hpp">.h &amp; .hpp</h4>
 <p>If you are at all familiar with C you probably know header files.</p>
 <p>C++ is an extend of C so C++ also uses header files. These can either have a <code>.h</code> extention or <code>.hpp</code>.</p>
-<p>A header file includes the following three things </p>
+<p>A header file includes the following three things</p>
 <ul>
 <li>Function definitions</li>
 <li>Data type definitions</li>
@@ -957,21 +957,21 @@ This will create a file named <code>a.out</code> (the executable's default file 
 </details>
 <h3 id="c-project-structure">C++ Project Structure</h3>
 <p>Top-Level Directories:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>build/ 
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>include/ 
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>src/ 
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>tests/ 
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>examples/ 
-<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>external/ 
-<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>data/ 
-<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>tools/ 
-<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>docs/ 
-<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>libs/ 
-<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>extras/ 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>build/
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>include/
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>src/
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>tests/
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>examples/
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>external/
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>data/
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>tools/
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>docs/
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>libs/
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>extras/
 </code></pre></div>
 <p>A lot of these Top-Level directories are not needed at the start so we shall ignore them for the beginning. But a few are important so we will take a futher look into them.</p>
 <p><code>build</code> is reserved for builds. So its special in that it must <strong>not</strong> be committed to a <a href="">Source Control System</a>.</p>
-<p><code>src</code> Source is very important here you will place your .cpp files. </p>
+<p><code>src</code> Source is very important here you will place your .cpp files.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Header File Placement</p>

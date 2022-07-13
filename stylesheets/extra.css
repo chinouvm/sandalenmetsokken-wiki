@@ -3,6 +3,7 @@
   --md-default-fg-color: #fff;
   --md-primary-bg-color: #ffffff;
   --md-default-bg-color: #292a35;
+  --md-footer-bg-color: #161623;
 
   --md-code-hl-number-color: #bd93f9;
   --md-code-hl-special-color: hsla(340, 83%, 47%, 1);
@@ -76,5 +77,4 @@
 
 .md-footer {
   background-color: #161623;
-  position: sticky;
 }
