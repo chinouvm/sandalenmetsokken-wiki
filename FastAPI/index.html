@@ -414,8 +414,50 @@
   
   
     <li class="md-nav__item">
+      <a href="../CPP/" class="md-nav__link">
+        C++
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Git/" class="md-nav__link">
         Git
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Definitions/" class="md-nav__link">
+        Definitions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Editors/" class="md-nav__link">
+        Editors
       </a>
     </li>
   
@@ -552,12 +594,13 @@
 
 
 
-<h1 id="fastapi">FastAPI</h1>
+<h1 id="fastapi"><strong>FastAPI</strong></h1>
 <p><em><strong>Author:</strong> Teun Engels</em></p>
 <hr />
 <p>This is a comprehensive cheatsheet of all the basics of FastAPI.</p>
-<p>To read more about APIs -&gt; <a href="../BasicsAPI/">here</a>.</p>
-<h2 id="explanation">Explanation</h2>
+<p>To read more about <a href="../BasicsAPI/">APIs</a>.</p>
+<p>If you are new to Python you can check <a href="../Python/">this</a>.</p>
+<h2 id="explanation"><strong>Explanation</strong></h2>
 <p>The key features are:</p>
 <ul>
 <li><strong>Fast</strong>: Very high performance, on par with <strong>NodeJS</strong> and <strong>Go</strong></li>
@@ -569,8 +612,8 @@
 <li><strong>Robust</strong>: Get production-ready code. With automatic interactive documentation.</li>
 </ul>
 <p>These key features are from <a href="https://fastapi.tiangolo.com/">FastAPI</a>.</p>
-<h2 id="installation">Installation</h2>
-<h3 id="basic-installation">Basic installation</h3>
+<h2 id="installation"><strong>Installation</strong></h2>
+<h3 id="basic-installation"><strong>Basic installation</strong></h3>
 <p>If you are new to installing things for a python project click <a href="../PyInstalling/">here</a>.</p>
 <p>First of all you will need fastapi.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip install fastapi
@@ -584,7 +627,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip install pydantic
 </code></pre></div>
 </div>
-<h3 id="running-your-first-api">Running your first API</h3>
+<h3 id="running-your-first-api"><strong>Running your first API</strong></h3>
 <p>To run your API you will need a basic <code>main.py</code> file. Example:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
@@ -600,7 +643,7 @@
 <li><code>app</code>: the object created inside of <code>main.py</code> with the line <code>app = FastAPI()</code>.</li>
 <li><code>--reload</code>: make the server restart after code changes. Only use for development.</li>
 </ul>
-<h2 id="implementation">Implementation</h2>
+<h2 id="implementation"><strong>Implementation</strong></h2>
 <p>When building <a href="../BasicsAPI/#api-basics">APIs</a>, you normally use these specific HTTP methods to perform a specific action.</p>
 <p>Normally you use:</p>
 <table>
@@ -648,7 +691,7 @@
 <a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="k">return</span> <span class="p">{</span><span class="s2">&quot;response&quot;</span> <span class="p">:</span> <span class="s2">&quot;Hello World!!!&quot;</span><span class="p">}</span>
 </code></pre></div>
 </details>
-<h3 id="path-parameters">Path Parameters</h3>
+<h3 id="path-parameters"><strong>Path Parameters</strong></h3>
 <p>Path parameters are very useful because you can use these parameters directly in the path so that you can target specific items.</p>
 <details class="example" open="open">
 <summary>Example</summary>
@@ -674,10 +717,10 @@
 </code></pre></div>
 </div>
 </details>
-<h3 id="request-body">Request body</h3>
+<h3 id="request-body"><strong>Request body</strong></h3>
 <p>When you need to send data from a client to your API, you send it as a request body.</p>
-<p>For these models we will use <a href="https://pydantic-docs.helpmanual.io/">Pydantic</a>. View <a href="#installation">Installation</a> if you need help installing.</p>
-<p>Using models will give us a lot of <strong>advantages</strong></p>
+<p>For these data models we will use <a href="https://pydantic-docs.helpmanual.io/">Pydantic</a>. View <a href="#installation">Installation</a> if you need help installing.</p>
+<p>Using data models will give us a lot of <strong>advantages</strong></p>
 <ul>
 <li>Read the body of the request as <strong>JSON</strong>.</li>
 <li><strong>Validate the data</strong>. If the data is invalid, it will return a nice and clear error, indicating exactly where and what was the incorrect data.</li>
@@ -708,10 +751,40 @@
 <a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
 <a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
 <a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/items/&quot;</span><span class="p">)</span>
-<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">create_item</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">):</span> <span class="c1"># item as instance of Item Model</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">create_item</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">):</span> <span class="c1"># item as instance of Item data model</span>
 <a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>    <span class="k">return</span> <span class="n">item</span>
 </code></pre></div>
 </details>
+<p>These data models contain various data types like an integer, string or float. But they can also contain other data types like datetime. This can be very useful.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span> 
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="n">price</span><span class="p">:</span> <span class="nb">float</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="n">date</span> <span class="p">:</span> <span class="n">datetime</span>
+</code></pre></div>
+<p>Most of the time you will be using <a href="#path-parameters">Path parameters</a> &amp; <a href="#request-body">Request body's</a> combined. </p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Here is an example, here we can see path has a <code>item_id</code> parameter. We can now use this item_id to set the values of item_id to the value of <code>item</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span> 
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">price</span><span class="p">:</span> <span class="nb">float</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="nd">@app</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">create_item</span><span class="p">(</span><span class="n">item_id</span> <span class="p">:</span> <span class="nb">int</span><span class="p">,</span><span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">):</span> 
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    <span class="c1"># Some updating implementation </span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Succesfully updated item </span><span class="si">{</span><span class="n">item_id</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+</div>
 
               
             </article>
@@ -748,13 +821,13 @@
       
       
         
-        <a href="../Git/" class="md-footer__link md-footer__link--next" aria-label="Next: Git" rel="next">
+        <a href="../CPP/" class="md-footer__link md-footer__link--next" aria-label="Next: C++" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Git
+              C++
             </div>
           </div>
           <div class="md-footer__button md-icon">
