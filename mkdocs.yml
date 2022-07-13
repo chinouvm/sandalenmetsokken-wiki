@@ -11,8 +11,8 @@ copyright: Copyright &copy; 2022  |  Chinou & Teun
 theme:
   name: material
   custom_dir: docs/overrides
-  logo: img/logo.png
-  favicon: img/logo.png
+  logo: assets/images/favicon.png
+  favicon: assets/images/favicon.png
   homepage: https://sandalenmetsokken.nl/
   features:
     - navigation.top
@@ -29,7 +29,7 @@ nav:
       - Python:
           - Python Programming: Python.md
           - Python Installing: PyInstalling.md
-          - Git: Git.md
+      - Git: Git.md
   - Guides:
       - API:
           - API Basics: BasicsAPI.md
