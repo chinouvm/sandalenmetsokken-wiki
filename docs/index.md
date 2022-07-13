@@ -13,9 +13,14 @@ Coming soon:
 
 !!! donator "Donators"
 
-    - Karo Azizi
+    Donators:
 
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support us on Ko-fi', '#B696F5', 'S6S3DSLP3');kofiwidget2.draw();</script> 
+    - Karo Azizi €10
+
+    Total Donations:
+
+    <script type='text/javascript' src='https://ko-fi.com/widgets/CounterWidget.js'></script><script type='text/javascript'>counterwidget.init('S6S3DSLP3');counterwidget.draw();</script>
+
 
 The website and guides are created by [Teun Engels](https://github.com/engelsman16) and [Chinou van Maris](https://github.com/chinouvm).
 
