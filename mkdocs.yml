@@ -11,8 +11,8 @@ copyright: Copyright &copy; 2022  |  Chinou & Teun
 theme:
   name: material
   custom_dir: docs/overrides
-  logo: assets/images/favicon.png
-  favicon: assets/images/favicon.png
+  logo: img/logo.png
+  favicon: img/favicon.png
   homepage: https://sandalenmetsokken.nl/
   features:
     - navigation.top
