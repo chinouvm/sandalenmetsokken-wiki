@@ -1,13 +1,17 @@
-site_name: Sandalen met sokken!
+site_name: Sandalen met sokken
 site_url: https://sandalenmetsokken.nl/
+site_author: Chinou van Maris, Teun Engels
+site_description: >-
+  Sandalen met Sokken (Sandals with Socks in English) provides guides and cheatsheets for all kind of IT related topics. We have guides for programming languages, DevOps, Cloud, and more.
 
-repo_url: https://github.com/chinouvm/sandalenmetsokken-wiki/
-
-repo_name: sandalenmetsokken-wiki
+# Copyright
+copyright: Copyright &copy; 2022  |  Chinou & Teun
 
 theme:
   name: material
+  custom_dir: docs/overrides
   logo: img/logo.png
+  favicon: img/logo.png
   homepage: https://sandalenmetsokken.nl/
   features:
     - navigation.top
@@ -24,16 +28,13 @@ nav:
       - Python:
           - Python Programming: Python.md
           - Python Installing: PyInstalling.md
-
-      - Git: Git.md
-
+          - Git: Git.md
   - Guides:
-      - C++: CPP.md
-
       - API:
           - API Basics: BasicsAPI.md
           - FastAPI: FastAPI.md
-
+      - C++: CPP.md  
+      - Docker: Docker.md
   - Definitions: Definitions.md
 
 extra_css:
@@ -45,6 +46,17 @@ extra_javascript:
 plugins:
   - tags
   - search
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/chinouvm/sandalenmetsokken-wiki
+      name: The Github Repo of this Website
+    - icon: fontawesome/solid/money-check-dollar
+      link: https://ko-fi.com/sandalenmetsokken
+      name: Our ko-fi link for donations!
+  generator: false
 
 markdown_extensions:
   - pymdownx.highlight:
