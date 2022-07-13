@@ -6,7 +6,7 @@ tags:
   - Cheatsheet
 ---
 
-# FastAPI
+# **FastAPI**
 
 _**Author:** Teun Engels_
 
@@ -14,9 +14,11 @@ _**Author:** Teun Engels_
 
 This is a comprehensive cheatsheet of all the basics of FastAPI.
 
-To read more about APIs -> [here](BasicsAPI.md).
+To read more about [APIs](BasicsAPI.md).
 
-## Explanation
+If you are new to Python you can check [this](Python.md).
+
+## **Explanation**
 
 The key features are:
 
@@ -30,9 +32,9 @@ The key features are:
 
 These key features are from [FastAPI](https://fastapi.tiangolo.com/).
 
-## Installation
+## **Installation**
 
-### Basic installation
+### **Basic installation**
 
 If you are new to installing things for a python project click [here](PyInstalling.md).
 
@@ -56,7 +58,7 @@ pip install "uvicorn[standard]"
     pip install pydantic
     ```
 
-### Running your first API
+### **Running your first API**
 
 To run your API you will need a basic `main.py` file. Example:
 
@@ -76,7 +78,7 @@ You can now run the command `uvicorn main:app`. The command `uvicorn main:app` r
 - `app`: the object created inside of `main.py` with the line `app = FastAPI()`.
 - `--reload`: make the server restart after code changes. Only use for development.
 
-## Implementation
+## **Implementation**
 
 When building [APIs](BasicsAPI.md#api-basics), you normally use these specific HTTP methods to perform a specific action.
 
@@ -111,7 +113,7 @@ When building an API with FastAPI you will need to make a path operation. This w
     return {"response" : "Hello World!!!"}
     ```
     
-### Path Parameters
+### **Path Parameters**
 
 Path parameters are very useful because you can use these parameters directly in the path so that you can target specific items.
 
@@ -144,13 +146,13 @@ Path parameters are very useful because you can use these parameters directly in
         async def read_item(item_id : int):
         ```
 
-### Request body
+### **Request body**
 
 When you need to send data from a client to your API, you send it as a request body.
 
-For these models we will use [Pydantic](https://pydantic-docs.helpmanual.io/). View [Installation](#installation) if you need help installing.
+For these data models we will use [Pydantic](https://pydantic-docs.helpmanual.io/). View [Installation](#installation) if you need help installing.
 
-Using models will give us a lot of **advantages**
+Using data models will give us a lot of **advantages**
 
 - Read the body of the request as **JSON**.
 - **Validate the data**. If the data is invalid, it will return a nice and clear error, indicating exactly where and what was the incorrect data.
@@ -182,7 +184,45 @@ Using models will give us a lot of **advantages**
 
 
     @app.post("/items/")
-    async def create_item(item: Item): # item as instance of Item Model
+    async def create_item(item: Item): # item as instance of Item data model
         return item
     ```
+
+These data models contain various data types like an integer, string or float. But they can also contain other data types like datetime. This can be very useful.
+
+```py
+from fastapi import FastAPI
+from pydantic import BaseModel
+from datetime import datetime
+
+class Item(BaseModel): 
+name: str
+price: float
+date : datetime
+
+```
+
+Most of the time you will be using [Path parameters](#path-parameters) & [Request body's](#request-body) combined. 
+
+!!! example
+    Here is an example, here we can see path has a `item_id` parameter. We can now use this item_id to set the values of item_id to the value of `item`.
+
+    ```py
+    from fastapi import FastAPI
+    from pydantic import BaseModel
+
+    class Item(BaseModel):
+    name: str
+    description: str | None = None 
+    price: float
+
+    app = FastAPI()
+
+    @app.put("/items/{item_id}")
+    async def create_item(item_id : int,item: Item): 
+        # Some updating implementation 
+        return f"Succesfully updated item {item_id}"
+    ```
+
+
 
