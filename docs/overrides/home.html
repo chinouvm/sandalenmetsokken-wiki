@@ -1,0 +1,463 @@
+{% extends "main.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %} {{ super() }}
+<!-- Additional styles for landing page -->
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #16171d;
+  }
+
+  .md-main {
+    flex-grow: 0;
+    background-color: #161623;
+  }
+
+  .md-main__inner {
+    display: flex;
+    height: 100%;
+  }
+
+  .tx-container {
+    padding-top: 0rem;
+    background: linear-gradient(
+      to bottom,
+      var(--md-primary-fg-color),
+      rgb(86, 93, 194) 99%,
+      #161623 99%
+    );
+  }
+
+  .tx-hero {
+    margin: 32px 2.8rem;
+    color: var(--md-primary-bg-color);
+    justify-content: center;
+  }
+
+  .cards {
+    background-color: white;
+  }
+
+  .tx-hero h1 {
+    margin-bottom: 1rem;
+    color: currentColor;
+    font-weight: 700;
+  }
+
+  .tx-hero__content {
+    padding-bottom: 1rem;
+    margin: 0 auto;
+  }
+
+  .tx-hero__image {
+    width: 17rem;
+    height: 17rem;
+    order: 1;
+    padding-right: 2.5rem;
+  }
+
+  .tx-hero .md-button {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    color: var(--md-primary-bg-color);
+  }
+
+  .tx-hero .md-button--primary {
+    background-color: var(--md-primary-bg-color);
+    color: hsla(280deg, 37%, 48%, 1);
+    border-color: var(--md-primary-bg-color);
+  }
+
+  .tx-hero .md-button:focus,
+  .tx-hero .md-button:hover {
+    background-color: var(--md-accent-fg-color);
+    color: var(--md-default-bg-color);
+    border-color: var(--md-accent-fg-color);
+  }
+
+  .feature-item h2 svg {
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+    transform: translateY(10%);
+  }
+
+  .top-hr {
+    margin-top: 42px;
+  }
+
+  .feature-item {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    padding: 0 15px;
+    word-break: break-word;
+  }
+
+  .feature-item h2 {
+    color: #333;
+    font-weight: 300;
+    font-size: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+  }
+
+  .feature-item p {
+    font-size: 16px;
+    line-height: 1.8em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #111;
+    margin: 0 0 10px;
+    display: block;
+  }
+
+  @media screen and (max-width: 30em) {
+    .tx-hero h1 {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+      display: none;
+    }
+
+    .tx-hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tx-hero__content {
+      max-width: 22rem;
+      margin-top: 3.5rem;
+      margin-bottom: 3.5rem;
+      margin-left: 1rem;
+      margin-right: 4rem;
+      align-items: center;
+    }
+  }
+
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: none;
+    }
+
+    .top-hr {
+      width: 100%;
+      display: flex;
+      max-width: 61rem;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0 0.2rem;
+    }
+
+    .bottom-hr {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      max-width: 61rem;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0 0.2rem;
+    }
+
+    .feature-item {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .feature-item:hover {
+      background-color: #526cfe47;
+      border-radius: 3px;
+    }
+  }
+
+  .hr {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .text-center {
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    padding-bottom: 10px;
+  }
+
+  .logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+  }
+
+  .logos img {
+    flex: 1 1 auto;
+    padding: 25px;
+    max-height: 130px;
+    vertical-align: middle;
+  }
+
+  .hr-logos {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .md-footer-meta__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  .md-footer-social {
+    padding-top: 20px;
+  }
+
+  .cards-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #161623;
+    min-height: 25vh;
+  }
+
+  .section {
+    position: relative;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+
+  .container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+
+  .container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+
+  .container .card:hover .content {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+
+  .container .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+  }
+
+  .container .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .container .card .content .contentBx h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+  }
+
+  .container .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+  }
+
+  .container .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+  }
+
+  .container .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+  }
+
+  .container .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .container .card .sci li a {
+    color: #fff;
+    font-size: 24px;
+    transition: 0.2s;
+  }
+
+  .container .card .sci li a:hover {
+    color: #b696f5;
+  }
+
+  .authors {
+    font-size: 40px;
+  }
+
+  .heading {
+    margin-top: 50px;
+  }
+</style>
+
+<!-- Main site Entry button descriptions -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+<section class="tx-container">
+  <div class="md-grid md-typeset">
+    <div class="tx-hero">
+      <div class="tx-hero__image">
+        <img src="assets/steps.svg" draggable="false" />
+      </div>
+      <div class="tx-hero__content">
+        <h1>Guides and Cheatsheets</h1>
+        <p>
+          Sandalen met Sokken <em>(Sandals with Socks in English)</em> provides guides and
+          cheatsheets for all kind of IT related topics. We have guides for programming languages,
+          DevOps, Cloud, and more.
+        </p>
+        <a
+          href="{{ page.next_page.url | url }}"
+          title="{{ page.next_page.title | striptags }}"
+          class="md-button md-button--primary"
+        >
+          Get started
+        </a>
+        <a
+          href="https://github.com/chinouvm/sandalenmetsokken-wiki"
+          title="https://github.com/chinouvm/sandalenmetsokken-wiki"
+          class="md-button"
+          target="_blank"
+        >
+          Go to GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cards-body">
+  <div class="heading">
+    <h1 class="authors">The Authors</h1>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <div class="imgBx">
+            <img src="https://avatars.githubusercontent.com/u/80408039?v=4.png" alt="" />
+          </div>
+          <div class="contentBx">
+            <h3>Chinou<br /><span>Student ICT & Infrastructure</span></h3>
+          </div>
+        </div>
+        <ul class="sci">
+          <li style="--i: 1">
+            <a href="https://github.com/chinouvm" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li style="--i: 2">
+            <a href="https://www.linkedin.com/in/chinouvanmaris/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="imgBx">
+            <img src="https://avatars.githubusercontent.com/u/80408060?v=4.png" alt="" />
+          </div>
+          <div class="contentBx">
+            <h3>Teun<br /><span>Student ICT & Technology</span></h3>
+          </div>
+        </div>
+        <ul class="sci">
+          <li style="--i: 1">
+            <a href="https://github.com/engelsman16" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li style="--i: 2">
+            <a href="https://linkedin.com/in/teunengels" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+<!-- Content -->
+{% block content %}{% endblock %}

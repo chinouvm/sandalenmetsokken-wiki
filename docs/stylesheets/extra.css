@@ -26,7 +26,7 @@
 
 .md-typeset .admonition.commands,
 .md-typeset details.commands {
-  border-color: #B696F5;
+  border-color: #b696f5;
 }
 .md-typeset .commands > .admonition-title,
 .md-typeset .commands > summary {
@@ -34,9 +34,9 @@
 }
 .md-typeset .commands > .admonition-title::before,
 .md-typeset .commands > summary::before {
-  background-color: #B696F5;
+  background-color: #b696f5;
   -webkit-mask-image: var(--md-admonition-icon--commands);
-          mask-image: var(--md-admonition-icon--commands);
+  mask-image: var(--md-admonition-icon--commands);
 }
 
 .md-typeset .admonition.code,
@@ -51,12 +51,12 @@
 .md-typeset .code > summary::before {
   background-color: #96f5c4;
   -webkit-mask-image: var(--md-admonition-icon--code);
-          mask-image: var(--md-admonition-icon--code);
+  mask-image: var(--md-admonition-icon--code);
 }
 
 .md-typeset .admonition.donator,
 .md-typeset details.donator {
-  border-color: #B696F5;
+  border-color: #b696f5;
 }
 .md-typeset .donator > .admonition-title,
 .md-typeset .donator > summary {
@@ -64,7 +64,17 @@
 }
 .md-typeset .donator > .admonition-title::before,
 .md-typeset .donator > summary::before {
-  background-color: #B696F5;
+  background-color: #b696f5;
   -webkit-mask-image: var(--md-admonition-icon--donator);
-          mask-image: var(--md-admonition-icon--donator);
+  mask-image: var(--md-admonition-icon--donator);
+}
+
+.headerlogo {
+  scale: 1.5;
+  margin-right: -0.5rem;
+}
+
+.md-footer {
+  background-color: #161623;
+  position: sticky;
 }
