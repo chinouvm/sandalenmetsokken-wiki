@@ -36,7 +36,7 @@ We have a few options but we will show the 2 most popular ones
 
 - Linux (Can also be VM or WSL)
 
-#### VS22
+#### Windows
 
 The first option is Visual Studio (in this case Visual Studio Code 22).
 
@@ -91,6 +91,47 @@ For this we need to use the terminal `Press Ctrl + Alt + T`
     ```
 
 
+!!! warning
+
+    **From this point on we will use Linux for the rest of this guide.** 
+
+### Your first program
+
+We will now make your first C++ program. 
+
+First we need to create a file called [`main.cpp`](#file-types) and we will put our code in there.
+
+We shall ignore the code for now.
+
+This is purely for showing you how to compile a file to an executable with [g++](#linux).
+
+```cpp
+#include <iostream>
+using namespace std;    
+
+int main()
+{
+    cout << "Hello World!\n";
+    return 0;
+}
+```
+
+Now we have a file called `main.cpp` and we can compile it with `g++ main.cpp`.
+
+```
+g++ main.cpp
+```
+This will create a file named `a.out` (the executable's default file name). To run the program we can use `./a.out`.
+
+!!! info
+
+    **Note:** You can also use `g++ main.cpp -o <target_name>` to compile the program to a filed named target_name.
+
+    ```
+    g++ main.cpp -o main.exe
+    ```
+
+    This will result in a file named `main.exe` which can be run with `./main.exe`.
 
 ### File Types
 
@@ -107,8 +148,8 @@ using namespace std;
 
 int main()
 {
-   cout<<std::endl<<"Hello World";
-   // C++ returns 0 by default so there is no need to do it yourself (optional).
+   cout << "Hello World!\n";
+   return 0;
 }
 
 ```
@@ -145,6 +186,7 @@ There are two types of header files
     int main()
     {
     SumOfTwo(3,4);
+    return 0;
     }
 
     ```
@@ -223,7 +265,9 @@ A lot of these Top-Level directories are not needed at the start so we shall ign
             sorting.hpp
     ```
 
-## Your first program
+
+
+
 
 
 

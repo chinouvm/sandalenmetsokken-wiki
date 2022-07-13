@@ -66,3 +66,14 @@ Run this command to create a new venv named `<venv>` .
 ```
 py -m venv <venv>
 ```
+
+To activate the venv you can run:
+
+```
+<src>/venv/Scripts/activate
+```
+
+Where `<src>` is the path to the folder where you have the venv.
+
+
+
