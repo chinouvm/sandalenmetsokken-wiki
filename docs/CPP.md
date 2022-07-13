@@ -52,7 +52,7 @@ The first option is Visual Studio (in this case Visual Studio Code 22).
 
 #### Linux
 
-The second option is linux. 
+The second option is linux.
 
 !!! note
 
@@ -61,7 +61,7 @@ The second option is linux.
 For this we need to use the terminal `Press Ctrl + Alt + T`
 
 !!! commands
-    
+
     To install g++ you need to run this command
 
     ```
@@ -90,14 +90,13 @@ For this we need to use the terminal `Press Ctrl + Alt + T`
     gdb --version
     ```
 
-
 !!! warning
 
-    **From this point on we will use Linux for the rest of this guide.** 
+    **From this point on we will use Linux for the rest of this guide.**
 
 ### Your first program
 
-We will now make your first C++ program. 
+We will now make your first C++ program.
 
 First we need to create a file called [`main.cpp`](#file-types) and we will put our code in there.
 
@@ -107,7 +106,7 @@ This is purely for showing you how to compile a file to an executable with [g++]
 
 ```cpp
 #include <iostream>
-using namespace std;    
+using namespace std;
 
 int main()
 {
@@ -121,6 +120,7 @@ Now we have a file called `main.cpp` and we can compile it with `g++ main.cpp`.
 ```
 g++ main.cpp
 ```
+
 This will create a file named `a.out` (the executable's default file name). To run the program we can use `./a.out`.
 
 !!! info
@@ -137,7 +137,7 @@ This will create a file named `a.out` (the executable's default file name). To r
 
 #### .cpp
 
-For C++ code we use a `.cpp` file so the [compiler]() knows we are using C++. 
+For C++ code we use a `.cpp` file so the [compiler]() knows we are using C++.
 
 `main.cpp` is the source code filename typically used for the main() function of a C++ program, where the program begins execution.
 
@@ -160,7 +160,7 @@ If you are at all familiar with C you probably know header files.
 
 C++ is an extend of C so C++ also uses header files. These can either have a `.h` extention or `.hpp`.
 
-A header file includes the following three things 
+A header file includes the following three things
 
 - Function definitions
 - Data type definitions
@@ -213,31 +213,29 @@ There are two types of header files
 
     ```
 
-
-
 ### C++ Project Structure
 
 Top-Level Directories:
 
 ```
-build/ 
-include/ 
-src/ 
-tests/ 
-examples/ 
-external/ 
-data/ 
-tools/ 
-docs/ 
-libs/ 
-extras/ 
+build/
+include/
+src/
+tests/
+examples/
+external/
+data/
+tools/
+docs/
+libs/
+extras/
 ```
 
 A lot of these Top-Level directories are not needed at the start so we shall ignore them for the beginning. But a few are important so we will take a futher look into them.
 
 `build` is reserved for builds. So its special in that it must **not** be committed to a [Source Control System]().
 
-`src` Source is very important here you will place your .cpp files. 
+`src` Source is very important here you will place your .cpp files.
 
 !!! note
 
@@ -264,11 +262,3 @@ A lot of these Top-Level directories are not needed at the start so we shall ign
             sorting.cpp
             sorting.hpp
     ```
-
-
-
-
-
-
-
-
