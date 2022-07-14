@@ -36,7 +36,7 @@ We have a few options but we will show the 2 most popular ones
 
 - Linux (Can also be VM or WSL)
 
-#### Windows
+#### Windows :fontawesome-brands-windows:
 
 The first option is Visual Studio (in this case Visual Studio Code 22).
 
@@ -50,9 +50,9 @@ The first option is Visual Studio (in this case Visual Studio Code 22).
 
 - For the rest you just need to follow the installer
 
-#### Linux
+#### Linux :fontawesome-brands-linux:
 
-The second option is linux.
+The second option is  linux.
 
 !!! note
 

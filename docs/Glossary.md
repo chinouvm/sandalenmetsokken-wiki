@@ -4,7 +4,7 @@ tags:
   - Cheatsheet
 ---
 
-# Definitions
+# Glossary
 
 _**Authors**: Teun Engels, Chinou van Maris_
 
@@ -25,9 +25,9 @@ Source : [GPL](https://en.wikipedia.org/wiki/General-purpose_programming_languag
 
 ## object-oriented programming
 
-Object-oriented programming (OOP) is a class of programming languages based around the concept of a "Object".
+Object-oriented programming (OOP) is a type of programming based around the concept of a "Object".
 
-Objects are instances of a Class. A class can contain data in often in attributes or properties and functions often known as methods.
+Objects are instances of a Class. A class can contain data in often in attributes or properties and functions known as methods.
 
 Common OOP languages:
 
@@ -45,7 +45,6 @@ Generic programming allows algorithms to be written in a particular syntax where
 !!! example
 
     Using generic programming, a sorting algorithm doesn't have to worry about exactly what data type it sorts, only how it does it.
-
 
 Common languages that support generic programming:
 
@@ -81,7 +80,7 @@ This means that a function not only returns a value, but also modifies some vari
 
 In [functional programming](#functional-programming) you see that changing variables is avoided as much as possible.
 
-Source : [Side Effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science))
+Source : [Side Effects](<https://en.wikipedia.org/wiki/Side_effect_(computer_science)>)
 
 ## Resources
 
@@ -89,4 +88,4 @@ Source : [Side Effects](https://en.wikipedia.org/wiki/Side_effect_(computer_scie
 - [Object Oriented Programming](https://en.wikipedia.org/wiki/Object-oriented_programming)
 - [Generic Programming](https://en.wikipedia.org/wiki/Generic_programming)
 - [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming)
-- [Side Effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science))
+- [Side Effects](<https://en.wikipedia.org/wiki/Side_effect_(computer_science)>)
