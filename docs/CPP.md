@@ -22,7 +22,7 @@ C++ has lots of features
 - [object-oriented programming](Definitions.md#object-oriented-programming)
 - [generic programming](Definitions.md#generic-programming)
 - [functional programming](Definitions.md#functional-programming)
-- [low-level memory manipulation](Definitions.md#low-level-memory-manipulation)
+- low-level memory manipulation
 
 ## Setup
 
