@@ -3,7 +3,7 @@ tags:
   - Coding
   - Python
   - API
-  - Cheatsheet
+  - Guide
 ---
 
 # **FastAPI**
@@ -84,13 +84,12 @@ When building [APIs](BasicsAPI.md#api-basics), you normally use these specific H
 
 Normally you use:
 
-| Method      | Description                          |
-| :---------: | :----------------------------------: |
-| `GET`       | :material-check:     Fetch resource  |
-| `POST`      | :material-check:     Upload resource |
-| `PUT`       | :material-check-all: Update resource |
-| `DELETE`    | :material-close:     Delete resource |
-
+|  Method  |             Description              |
+| :------: | :----------------------------------: |
+|  `GET`   |   :material-check: Fetch resource    |
+|  `POST`  |   :material-check: Upload resource   |
+|  `PUT`   | :material-check-all: Update resource |
+| `DELETE` |   :material-close: Delete resource   |
 
 When building an API with FastAPI you will need to make a path operation. This will call a certain function when a operation reaches path x.
 
@@ -100,7 +99,7 @@ When building an API with FastAPI you will need to make a path operation. This w
 
     - **path**: is `/`.
     - **operation**: is `get`.
-    - **function**: [async](BasicsAPI.md#synchronous-asynchronous) def get_root() 
+    - **function**: [async](BasicsAPI.md#synchronous-asynchronous) def get_root()
 
     ```py
     from fastapi import FastAPI
@@ -112,11 +111,10 @@ When building an API with FastAPI you will need to make a path operation. This w
     async def get_root():
     return {"response" : "Hello World!!!"}
     ```
-    
+
 ### **Path Parameters**
 
 Path parameters are very useful because you can use these parameters directly in the path so that you can target specific items.
-
 
 ???+ example
 
@@ -124,7 +122,7 @@ Path parameters are very useful because you can use these parameters directly in
 
     - **path**: is `/items/{item_id}`.
     - **parameter**: is `{item_id}`.
-    - **explanation**: now you can target a specific item. You can do this by entering a parameter. 
+    - **explanation**: now you can target a specific item. You can do this by entering a parameter.
 
 
     ```py
@@ -158,7 +156,6 @@ Using data models will give us a lot of **advantages**
 - **Validate the data**. If the data is invalid, it will return a nice and clear error, indicating exactly where and what was the incorrect data.
 - Give you the received data in the **parameter item**.
 - Those schemas will be part of the generated schema, and used by the **automatic documentation**.
-
 
 !!! info
 
@@ -195,17 +192,16 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from datetime import datetime
 
-class Item(BaseModel): 
+class Item(BaseModel):
 name: str
 price: float
 date : datetime
 
 ```
 
-Most of the time you will be using [Path parameters](#path-parameters) & [Request body's](#request-body) combined. 
+Most of the time you will be using [Path parameters](#path-parameters) & [Request body's](#request-body) combined.
 
-!!! example
-    Here is an example, here we can see path has a `item_id` parameter. We can now use this item_id to set the values of item_id to the value of `item`.
+!!! example Here is an example, here we can see path has a `item_id` parameter. We can now use this item_id to set the values of item_id to the value of `item`.
 
     ```py
     from fastapi import FastAPI
@@ -213,16 +209,13 @@ Most of the time you will be using [Path parameters](#path-parameters) & [Reques
 
     class Item(BaseModel):
     name: str
-    description: str | None = None 
+    description: str | None = None
     price: float
 
     app = FastAPI()
 
     @app.put("/items/{item_id}")
-    async def create_item(item_id : int,item: Item): 
-        # Some updating implementation 
+    async def create_item(item_id : int,item: Item):
+        # Some updating implementation
         return f"Succesfully updated item {item_id}"
     ```
-
-
-

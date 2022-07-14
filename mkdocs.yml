@@ -38,7 +38,8 @@ nav:
           - API Basics: BasicsAPI.md
           - FastAPI: FastAPI.md
       - C++: CPP.md
-      - Docker: Docker.md
+      - Docker:
+          - Installation: DockerInstall.md
   - Glossary: Glossary.md
 
 extra_css:
@@ -62,12 +63,17 @@ extra:
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.betterem
+  - pymdownx.tabbed:
+      alternate_style: true
   - admonition
   - attr_list
   - md_in_html

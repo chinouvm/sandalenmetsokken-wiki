@@ -4,6 +4,7 @@ tags:
   - Python
   - Setup
   - Cheatsheet
+  - Installation
 ---
 
 # Python Installing
@@ -30,14 +31,13 @@ This document will cover the basics of installing things in python (pip & venv).
 
 ## **Python**
 
-To install :fontawesome-brands-python: python you just need to go [here](https://www.python.org/downloads/). 
+To install :fontawesome-brands-python: python you just need to go [here](https://www.python.org/downloads/).
 
 !!! warning
 
     Make sure to **check** add Python x to include PATH
 
     ![install](img/install.jpg)
-
 
 ## **pip**
 
@@ -74,6 +74,3 @@ To activate the venv you can run:
 ```
 
 Where `<src>` is the path to the folder where you have the venv.
-
-
-

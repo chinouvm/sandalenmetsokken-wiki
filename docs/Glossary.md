@@ -12,7 +12,7 @@ _**Authors**: Teun Engels, Chinou van Maris_
 
 ## GPL
 
-GPL (general purpose programming language) is a language used for building software in a variety of domains. 
+GPL (general purpose programming language) is a language used for building software in a variety of domains.
 
 Common GPL's:
 
@@ -27,7 +27,7 @@ Source : [GPL](https://en.wikipedia.org/wiki/General-purpose_programming_languag
 
 Object-oriented programming (OOP) is a class of programming languages based around the concept of a "Object".
 
-Objects are instances of a Class. A class can contain data in often in attributes or properties and functions often known as methods.  
+Objects are instances of a Class. A class can contain data in often in attributes or properties and functions often known as methods.
 
 Common OOP languages:
 
@@ -44,7 +44,8 @@ Generic programming allows algorithms to be written in a particular syntax where
 
 !!! example
 
-    Using generic programming, a sorting algorithm doesn't have to worry about exactly what data type it sorts, only how it does it. 
+    Using generic programming, a sorting algorithm doesn't have to worry about exactly what data type it sorts, only how it does it.
+
 
 Common languages that support generic programming:
 
@@ -55,7 +56,7 @@ Source : [Generic Programming](https://en.wikipedia.org/wiki/Generic_programming
 
 ## functional programming
 
-In functional programming, information processing is expressed in the form of functions, similar to mathematical functions. 
+In functional programming, information processing is expressed in the form of functions, similar to mathematical functions.
 
 With this style, changes to variables outside the function and the storage of program state and modifiable variables should be avoided ([Side effects](#side-effects)).
 
@@ -67,14 +68,10 @@ Common languages that support functional programming:
 
 !!! note
 
-    C++ `does not support all` of the functional programming features (By default). 
-
+    C++ `does not support all` of the functional programming features (By default).
     However with the C++ you can add functions to do so.
-    
-    ```
 
 Source : [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming)
-
 
 ## Side effects
 
@@ -85,7 +82,6 @@ This means that a function not only returns a value, but also modifies some vari
 In [functional programming](#functional-programming) you see that changing variables is avoided as much as possible.
 
 Source : [Side Effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science))
-
 
 ## Resources
 
