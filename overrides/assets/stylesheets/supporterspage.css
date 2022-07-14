@@ -6,6 +6,7 @@
 
 body {
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 .md-main {
@@ -41,11 +42,10 @@ body {
 }
 
 .tx-hero__image {
-  width: 18rem;
-  height: 18rem;
+  width: 17rem;
+  height: 17rem;
   order: 1;
   padding-top: 2rem;
-  padding-right: 2.5rem;
 }
 
 .tx-hero .md-button {
@@ -71,6 +71,10 @@ body {
   .tx-hero h1 {
     font-size: 1.4rem;
   }
+
+  .tx-hero__image {
+    padding-right: 3rem;
+  }
 }
 
 @media screen and (min-width: 60em) {
@@ -92,11 +96,19 @@ body {
     margin-right: 4rem;
     align-items: center;
   }
+
+  .tx-hero__image {
+    padding-right: 3rem;
+  }
 }
 
 @media screen and (min-width: 76.25em) {
   .md-sidebar--primary {
     display: none;
+  }
+
+  .tx-hero__image {
+    padding-right: 3rem;
   }
 }
 
