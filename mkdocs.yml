@@ -33,6 +33,8 @@ nav:
           - Python Programming: Python.md
           - Python Installing: PyInstalling.md
       - Git: Git.md
+      - Linux:
+          - GDB: GDB.md
   - Guides:
       - API:
           - API Basics: BasicsAPI.md
