@@ -39,7 +39,7 @@ nav:
           - FastAPI: FastAPI.md
       - C++: CPP.md
       - Docker: Docker.md
-  - Definitions: Definitions.md
+  - Glossary: Glossary.md
 
 extra_css:
   - stylesheets/extra.css
