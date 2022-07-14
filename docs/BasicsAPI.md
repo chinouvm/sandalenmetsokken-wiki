@@ -2,7 +2,7 @@
 tags:
   - Coding
   - API
-  - Cheatsheet
+  - Guide
 ---
 
 # API Basics

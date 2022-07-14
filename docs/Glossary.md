@@ -1,10 +1,10 @@
 ---
 tags:
   - Coding
-  - Cheatsheet
+  - Guide
 ---
 
-# Definitions
+# Glossary
 
 _**Authors**: Teun Engels, Chinou van Maris_
 
@@ -12,7 +12,7 @@ _**Authors**: Teun Engels, Chinou van Maris_
 
 ## GPL
 
-GPL (general purpose programming language) is a language used for building software in a variety of domains. 
+GPL (general purpose programming language) is a language used for building software in a variety of domains.
 
 Common GPL's:
 
@@ -25,7 +25,7 @@ Common GPL's:
 
 Object-oriented programming (OOP) is a class of programming languages based around the concept of a "Object".
 
-Objects are instances of a Class. A class can contain data in often in attributes or properties and functions often known as methods.  
+Objects are instances of a Class. A class can contain data in often in attributes or properties and functions often known as methods.
 
 Common OOP languages:
 
