@@ -4,7 +4,7 @@ tags:
   - Cheatsheet
 ---
 
-# Definitions
+# Glossary
 
 _**Authors**: Teun Engels, Chinou van Maris_
 
@@ -46,7 +46,6 @@ Generic programming allows algorithms to be written in a particular syntax where
 
     Using generic programming, a sorting algorithm doesn't have to worry about exactly what data type it sorts, only how it does it.
 
-
 Common languages that support generic programming:
 
 - C++
@@ -81,7 +80,7 @@ This means that a function not only returns a value, but also modifies some vari
 
 In [functional programming](#functional-programming) you see that changing variables is avoided as much as possible.
 
-Source : [Side Effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science))
+Source : [Side Effects](<https://en.wikipedia.org/wiki/Side_effect_(computer_science)>)
 
 ## Resources
 
@@ -89,4 +88,4 @@ Source : [Side Effects](https://en.wikipedia.org/wiki/Side_effect_(computer_scie
 - [Object Oriented Programming](https://en.wikipedia.org/wiki/Object-oriented_programming)
 - [Generic Programming](https://en.wikipedia.org/wiki/Generic_programming)
 - [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming)
-- [Side Effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science))
+- [Side Effects](<https://en.wikipedia.org/wiki/Side_effect_(computer_science)>)
