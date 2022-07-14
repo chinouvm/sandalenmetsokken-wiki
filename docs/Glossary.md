@@ -25,9 +25,9 @@ Source : [GPL](https://en.wikipedia.org/wiki/General-purpose_programming_languag
 
 ## object-oriented programming
 
-Object-oriented programming (OOP) is a class of programming languages based around the concept of a "Object".
+Object-oriented programming (OOP) is a type of programming based around the concept of a "Object".
 
-Objects are instances of a Class. A class can contain data in often in attributes or properties and functions often known as methods.
+Objects are instances of a Class. A class can contain data in often in attributes or properties and functions known as methods.
 
 Common OOP languages:
 
