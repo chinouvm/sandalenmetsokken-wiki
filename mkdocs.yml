@@ -4,9 +4,12 @@ site_author: Chinou van Maris, Teun Engels
 site_description: >-
   Sandalen met Sokken (Sandals with Socks in English) provides guides and cheatsheets for all kind of IT related topics. We have guides for programming languages, DevOps, Cloud, and more.
 
-
 # Copyright
 copyright: Copyright &copy; 2022  |  Chinou & Teun
+
+repo_url: https://github.com/chinouvm/sandalenmetsokken-wiki
+
+repo_name: Github
 
 theme:
   name: material
