@@ -16,12 +16,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sandalenmetsokken.nl/Contributors/</loc>
+         <lastmod>2022-07-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sandalenmetsokken.nl/DockerInstall/</loc>
          <lastmod>2022-07-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sandalenmetsokken.nl/FastAPI/</loc>
+         <lastmod>2022-07-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sandalenmetsokken.nl/GDB/</loc>
          <lastmod>2022-07-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -42,6 +52,16 @@
     </url>
     <url>
          <loc>https://sandalenmetsokken.nl/Python/</loc>
+         <lastmod>2022-07-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sandalenmetsokken.nl/Supporters/</loc>
+         <lastmod>2022-07-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sandalenmetsokken.nl/howtocontribute/</loc>
          <lastmod>2022-07-14</lastmod>
          <changefreq>daily</changefreq>
     </url>

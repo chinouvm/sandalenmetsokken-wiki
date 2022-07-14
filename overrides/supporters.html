@@ -1,0 +1,85 @@
+{% extends "main.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %} {{ super() }}
+<!-- Additional styles for landing page -->
+
+<!-- Main site Entry button descriptions -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+<link rel="stylesheet" href="../overrides/assets/stylesheets/supporterspage.css" />
+
+<section class="tx-container">
+  <div class="md-grid md-typeset">
+    <div class="tx-hero">
+      <div class="tx-hero__image">
+        <img src="../overrides/assets/images/support.svg" draggable="false" />
+      </div>
+      <div class="tx-hero__content">
+        <h1>Become a supporter</h1>
+        <p>
+          By donating you can motivate us to continue to improve the guides and cheatsheets we
+          write. You can also comission us to write a guide for you.
+        </p>
+        <a href="https://ko-fi.com/sandalenmetsokken" target="_blank">
+          <img
+            src="https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/61e11ddcc39341db4958c5cc_Supportbutton.png"
+            width="45%"
+            class="kofibutton"
+            draggable="false"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cards-body">
+  <div class="heading">
+    <h1 class="authors">Supporters</h1>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <div class="imgBx">
+            <img src="../overrides/assets/images/karo.jpg" />
+          </div>
+          <div class="contentBx">
+            <h3>Karo Azizi<br /><span>€10</span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="imgBx">
+            <img src="../overrides/assets/images/noavatar.jpg" alt="" />
+          </div>
+          <div class="contentBx">
+            <h3>Lorem<br /><span>Lorem ipsum dolor sit amet.</span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <div class="imgBx">
+            <img src="../overrides/assets/images/noavatar.jpg" alt="" />
+          </div>
+          <div class="contentBx">
+            <h3>Lorem<br /><span>Lorem ipsum dolor sit amet.</span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+<!-- Content -->
+{% block content %}{% endblock %}
