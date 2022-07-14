@@ -2,7 +2,7 @@
 tags:
   - Coding
   - C++
-  - Cheatsheet
+  - Guide
 ---
 
 # C++ Guide
@@ -15,14 +15,14 @@ This is a basic guide for C++.
 
 ## What is C++
 
-C++ is a [GPL](Definitions.md#gpl) developed by [Bjarne Stroustrup](https://en.wikipedia.org/wiki/Bjarne_Stroustrup)
+C++ is a [GPL](Glossary.md#gpl) developed by [Bjarne Stroustrup](https://en.wikipedia.org/wiki/Bjarne_Stroustrup)
 
 C++ has lots of features
 
-- [object-oriented programming](Definitions.md#object-oriented-programming)
-- [generic programming](Definitions.md#generic-programming)
-- [functional programming](Definitions.md#functional-programming)
-- [low-level memory manipulation](Definitions.md#low-level-memory-manipulation)
+- [object-oriented programming](Glossary.md#object-oriented-programming)
+- [generic programming](Glossary.md#generic-programming)
+- [functional programming](Glossary.md#functional-programming)
+- [low-level memory manipulation](Glossary.md#low-level-memory-manipulation)
 
 ## Setup
 

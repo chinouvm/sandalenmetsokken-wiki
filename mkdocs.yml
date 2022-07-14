@@ -4,9 +4,12 @@ site_author: Chinou van Maris, Teun Engels
 site_description: >-
   Sandalen met Sokken (Sandals with Socks in English) provides guides and cheatsheets for all kind of IT related topics. We have guides for programming languages, DevOps, Cloud, and more.
 
-
 # Copyright
 copyright: Copyright &copy; 2022  |  Chinou & Teun
+
+repo_url: https://github.com/chinouvm/sandalenmetsokken-wiki
+
+repo_name: Github
 
 theme:
   name: material
@@ -35,8 +38,9 @@ nav:
           - API Basics: BasicsAPI.md
           - FastAPI: FastAPI.md
       - C++: CPP.md
-      - Docker: Docker.md
-  - Definitions: Definitions.md
+      - Docker:
+          - Installation: DockerInstall.md
+  - Glossary: Glossary.md
 
 extra_css:
   - stylesheets/extra.css
@@ -59,12 +63,17 @@ extra:
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.betterem
+  - pymdownx.tabbed:
+      alternate_style: true
   - admonition
   - attr_list
   - md_in_html
