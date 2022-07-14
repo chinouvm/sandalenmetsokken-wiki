@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sandalenmetsokken.nl/</loc>
-         <lastmod>2022-07-13</lastmod>
+         <lastmod>2022-07-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sandalenmetsokken.nl/BasicsAPI/</loc>
-         <lastmod>2022-07-13</lastmod>
+         <lastmod>2022-07-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sandalenmetsokken.nl/CPP/</loc>
-         <lastmod>2022-07-13</lastmod>
+         <lastmod>2022-07-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sandalenmetsokken.nl/Definitions/</loc>
-         <lastmod>2022-07-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sandalenmetsokken.nl/Docker/</loc>
-         <lastmod>2022-07-13</lastmod>
+         <loc>https://sandalenmetsokken.nl/DockerInstall/</loc>
+         <lastmod>2022-07-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sandalenmetsokken.nl/FastAPI/</loc>
-         <lastmod>2022-07-13</lastmod>
+         <lastmod>2022-07-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sandalenmetsokken.nl/Git/</loc>
-         <lastmod>2022-07-13</lastmod>
+         <lastmod>2022-07-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sandalenmetsokken.nl/Glossary/</loc>
+         <lastmod>2022-07-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sandalenmetsokken.nl/PyInstalling/</loc>
-         <lastmod>2022-07-13</lastmod>
+         <lastmod>2022-07-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sandalenmetsokken.nl/Python/</loc>
-         <lastmod>2022-07-13</lastmod>
+         <lastmod>2022-07-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
