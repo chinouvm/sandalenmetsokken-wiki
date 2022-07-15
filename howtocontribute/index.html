@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#how-to-contribute" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -513,10 +518,50 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          How to contribute
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         How to contribute
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contributing-to-the-project" class="md-nav__link">
+    Contributing to the project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing-guide" class="md-nav__link">
+    Contributing Guide
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -713,6 +758,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contributing-to-the-project" class="md-nav__link">
+    Contributing to the project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing-guide" class="md-nav__link">
+    Contributing Guide
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -733,9 +802,50 @@
 
 
 
-  <h1>How to contribute</h1>
+<h1 id="how-to-contribute">How to contribute</h1>
+<p><em><strong>Authors</strong>: Chinou van Maris &amp; Teun Engels</em></p>
+<hr />
+<h2 id="contributing-to-the-project">Contributing to the project</h2>
+<div class="admonition danger">
+<p class="admonition-title">Caution</p>
+<p>All guides contributed to the project <strong>NEED</strong> to written in a <a href="https://www.markdownguide.org/">markdown</a> format.</p>
+</div>
+<p>We are <strong>always</strong> looking for new contributors.</p>
+<p>If you are new to markdown there is a great guide to get started: <a href="https://www.markdownguide.org/cheatsheet/">Markdown Cheatsheet</a>.</p>
+<p>Since we are using <a href="https://squidfunk.github.io/mkdocs-material/">mkdocs material</a> for our documentation, we have a <a href="#contributing-guide">contributing guide</a> that you can follow.</p>
+<p>By pressing the <code>Start Contributing</code> button you will be taken to the template to start contributing.</p>
+<p align="center">
+<a class="md-button md-button--primary"  href="https://github.com/chinouvm/sandalenmetsokken-wiki/issues/new/choose">Start Contributing</a>
+</p>
 
-
+<h2 id="contributing-guide">Contributing Guide</h2>
+<p>Since we are using markdown files for our project we have a few guidelines to follow.</p>
+<p>First of all we need to make sure that the file is in the correct format.</p>
+<p>The following is a basic header example of each documentation file.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>---
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>tags:
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  - Coding
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  - API
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  - Guide
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>---
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a># API Basics
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>_**Authors:** Teun Engels, Chinou van Maris_
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>---
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>This document will cover all the basics about APIs (Application programming interface&#39;s).
+</code></pre></div>
+<p>Since we are limited to options markdown offers us we recommended not using any plugins or extensions.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>We are using <a href="https://squidfunk.github.io/mkdocs-material/">mkdocs material</a>, so you do have the option to use their <strong>free</strong>  plugins or extensions.</p>
+</div>
+<hr />
+<p align="center">
+<a class="md-button md-button--primary"  href="https://github.com/chinouvm/sandalenmetsokken-wiki/issues/new">Need help?</a>
+</p>
 
               
             </article>
